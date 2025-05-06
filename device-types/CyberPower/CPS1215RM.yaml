@@ -8,7 +8,7 @@ is_full_depth: false
 airflow: passive
 weight: 5.0
 weight_unit: lb
-# comments: CyberPower PDU 1u, 10 outlet 15A 100-125V
+comments: CyberPower PDU 1u, 10 outlet 15A 100-125V
 power-ports:
   - name: Power Port 1
     type: nema-5-15p
