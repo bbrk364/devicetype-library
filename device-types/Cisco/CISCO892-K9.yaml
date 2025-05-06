@@ -3,9 +3,9 @@ manufacturer: Cisco
 model: CISCO892-K9
 part_number: CISCO892-K9
 slug: cisco892-k9
-comments: '[Cisco C891F-K9 router SFP]'
 u_height: 1
 is_full_depth: false
+comments: '[Cisco C891F-K9 router SFP]'
 interfaces:
   - name: Back up WAN port—FE WAN
     type: 100base-tx
