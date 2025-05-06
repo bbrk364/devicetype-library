@@ -6,9 +6,9 @@ part_number: ms410-16
 u_height: 1.0
 is_full_depth: false
 airflow: front-to-rear
-comments: '[MS410 Overview and Specifications ](https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS410_Overview_and_Specifications)'
 weight: 11.8
 weight_unit: lb
+comments: '[MS410 Overview and Specifications ] | (https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS410_Overview_and_Specifications)'
 interfaces:
   - name: '1'
     type: 1000base-x-sfp
