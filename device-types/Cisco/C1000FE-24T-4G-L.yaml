@@ -3,12 +3,9 @@ manufacturer: Cisco
 model: C1000FE-24T-4G-L
 slug: cisco-c1000fe-24t-4g-l
 part_number: C1000FE-24T-4G-L
-comments: '### [Cisco Catalyst 1000 Series Switches Data Sheet]
-
-
-(https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1000-series-switches/nb-06-cat1k-ser-switch-ds-cte-en.html)'
 u_height: 1
 is_full_depth: false
+comments: '### [Cisco Catalyst 1000 Series Switches Data Sheet] | (https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1000-series-switches/nb-06-cat1k-ser-switch-ds-cte-en.html)'
 console-ports:
   - name: con0
     type: rj-45
