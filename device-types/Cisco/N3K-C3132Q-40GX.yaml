@@ -1,16 +1,11 @@
 ---
 manufacturer: Cisco
 model: Nexus 3132Q-40GX
-<<<<<<< HEAD
 slug: n3k-c3132q-40gx
 part_number: n3k-c3132q-40gx
-=======
-slug: cisco-nexus-3132q-40gx
-part_number: N3K-C3132Q-40GX
->>>>>>> dd0d92f171071b1fa27fd2b8294723b6e327005d
 u_height: 1
 is_full_depth: false
-comments: '#### Product Code:	 N3K-C3132Q-40GX 
+comments: '#### Product Code:	 N3K-C3132Q-40GX
 
 
 ###### Enclosure Type:	1 RU

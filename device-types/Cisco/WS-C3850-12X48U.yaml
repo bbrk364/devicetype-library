@@ -186,7 +186,6 @@ interfaces:
 module-bays:
   - name: Network Module
     position: '1'
-<<<<<<< HEAD
 module-bays:
   - name: StackPort1/1
     type: cisco-stackwise-480
@@ -196,9 +195,3 @@ module-bays:
     type: cisco-StackPower
   - name: StackStackPower1/2
     type: cisco-StackPower
-=======
-  - name: PS-A
-    position: A
-  - name: PS-B
-    position: B
->>>>>>> dd0d92f171071b1fa27fd2b8294723b6e327005d

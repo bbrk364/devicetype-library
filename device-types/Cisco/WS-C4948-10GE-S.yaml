@@ -112,7 +112,6 @@ interfaces:
 console-ports:
   - name: con0
     type: rj-45
-<<<<<<< HEAD:device-types/Cisco/WS-C4948-10G-S.yaml
 power-ports:
   - name: PS1
     type: iec-60320-c14
@@ -122,10 +121,3 @@ power-ports:
     type: iec-60320-c14
     maximum_draw: 300
     allocated_draw: 212
-=======
-module-bays:
-  - name: PSU0
-    position: '0'
-  - name: PSU1
-    position: '1'
->>>>>>> dd0d92f171071b1fa27fd2b8294723b6e327005d:device-types/Cisco/WS-C4948-10GE-S.yaml

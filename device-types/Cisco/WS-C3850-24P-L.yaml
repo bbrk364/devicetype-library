@@ -120,16 +120,3 @@ interfaces:
 module-bays:
   - name: Network Module
     position: '1'
-<<<<<<< HEAD
-
-=======
-  - name: PS-A
-    position: A
-  - name: PS-B
-    position: B
-console-ports:
-  - name: con0
-    type: rj-45
-  - name: usb0
-    type: usb-mini-b
->>>>>>> dd0d92f171071b1fa27fd2b8294723b6e327005d

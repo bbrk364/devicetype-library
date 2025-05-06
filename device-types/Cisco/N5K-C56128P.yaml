@@ -1,12 +1,7 @@
 ---
 manufacturer: Cisco
-<<<<<<< HEAD
 model: N5K 56128P
 slug: n5k-c56128p
-=======
-model: Nexus 56128P
-slug: cisco-n5k-c56128p
->>>>>>> dd0d92f171071b1fa27fd2b8294723b6e327005d
 part_number: N5K-C56128P
 u_height: 2
 is_full_depth: true
@@ -39,7 +34,7 @@ comments: '##  CISCO N5K-C56128P Nexus 56128p Managed L3 Switch - 48 1/10 Gigabi
 ######  Airflow : supporting both port-side intake (red handle) and fan-side intake (blue handle) airflow options.
 
 ######  Physical (height x width x depth) : 3.5 x 17.3 x 30 in (8.8 x 43.9 x 76.2 cm)
- 
+
 ######  Weight : 60 lb (2 expansion modules and 4 power supplies)
 '
 
@@ -64,7 +59,7 @@ power-ports:
   - name: PS4
     type: iec-60320-c14
     maximum_draw: 1100
-    allocated_draw: 650 
+    allocated_draw: 650
 interfaces:
   - name: mgmt0
     type: 1000base-t
@@ -173,8 +168,6 @@ interfaces:
     type: 40gbase-x-qsfpp
   - name: Ethernet1/52
     type: 40gbase-x-qsfpp
-<<<<<<< HEAD
-
   - name: Ethernet2/1
     type: 10gbase-x-sfpp
   - name: Ethernet2/2
@@ -285,21 +278,3 @@ module-bays:
     position: '2'
   - name: Network Module-3
     position: '3'
-=======
-console-ports:
-  - name: Console
-    type: rj-45
-module-bays:
-  - name: Slot 2
-    position: '2'
-  - name: Slot 3
-    position: '3'
-  - name: PS1
-    position: '1'
-  - name: PS2
-    position: '2'
-  - name: PS3
-    position: '3'
-  - name: PS4
-    position: '4'
->>>>>>> dd0d92f171071b1fa27fd2b8294723b6e327005d

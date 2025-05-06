@@ -7,9 +7,7 @@ u_height: 1
 is_full_depth: true
 subdevice_role: child
 subdevice_role: parent
-comments: '## [Cisco UCS C220 M4 SFF] 
-
-<https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/c220m4-sff-spec-sheet.pdf> '
+comments: '## [Cisco UCS C220 M4 SFF] | <https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/c220m4-sff-spec-sheet.pdf> '
 console-ports:
   - name: KVM connector
     type: other
