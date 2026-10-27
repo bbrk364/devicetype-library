@@ -4,12 +4,10 @@ model: RB2011UiAS-RM
 slug: mikrotik-rb2011uias-rm
 is_full_depth: false
 u_height: 1
-<<<<<<< HEAD
-comments: ' '
-=======
 airflow: passive
+weight: 880
+weight_unit: g
 comments: '[RB2011UiAS-RM Datasheet](https://mikrotik.com/product/RB2011UiAS-RM)'
->>>>>>> dd0d92f171071b1fa27fd2b8294723b6e327005d
 interfaces:
   - name: ether1
     type: 1000base-t
@@ -40,17 +38,8 @@ interfaces:
 console-ports:
   - name: serial0
     type: rj-45
-<<<<<<< HEAD
-  - name: usb
-    type: usb-a
-=======
->>>>>>> dd0d92f171071b1fa27fd2b8294723b6e327005d
 power-ports:
   - name: power1
     type: dc-terminal
     maximum_draw: 28
-<<<<<<< HEAD
-    
-=======
     allocated_draw: 6
->>>>>>> dd0d92f171071b1fa27fd2b8294723b6e327005d

@@ -1,24 +1,20 @@
 ---
 manufacturer: Cisco
-model: C9300L-24T-4G
-slug: c9300l-24T-4g
+model: Catalyst 9300L-24T-4G
 part_number: C9300L-24T-4G
+slug: cisco-c9300l-24t-4g
 u_height: 1
 is_full_depth: true
+front_image: true
+weight: 6.78
+weight_unit: kg
+airflow: front-to-rear
+comments: '[Cisco Catalyst 9300 Series Switches Data Sheet](https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9300-series-switches/nb-06-cat9300-ser-data-sheet-cte-en.html)'
 console-ports:
-  - name: Rear con 0
+  - name: con 0
     type: rj-45
-  - name: USB Mini Console
+  - name: usb
     type: usb-mini-b
-  - name: USB Port
-    type: usb-a 
-power-ports:
-  - name: PS-A
-    type: iec-60320-c16
-    maximum_draw: 350
-  - name: PS-B
-    type: iec-60320-c16
-    maximum_draw: 350
 interfaces:
   - name: GigabitEthernet1/0/1
     type: 1000base-t
@@ -70,22 +66,27 @@ interfaces:
     type: 1000base-t
   - name: GigabitEthernet1/1/1
     type: 1000base-x-sfp
-    mgmt_only: false
   - name: GigabitEthernet1/1/2
     type: 1000base-x-sfp
-    mgmt_only: false
   - name: GigabitEthernet1/1/3
     type: 1000base-x-sfp
-    mgmt_only: false
   - name: GigabitEthernet1/1/4
     type: 1000base-x-sfp
-    mgmt_only: false
-  - name: STACK0
-    type: cisco-stackwise-320
-    mgmt_only: false
-  - name: STACK1
-    type: cisco-stackwise-320
-    mgmt_only: false
+  - name: StackPort1/1
+    type: cisco-stackwise
+  - name: StackPort1/2
+    type: cisco-stackwise
   - name: GigabitEthernet0/0
     type: 1000base-t
     mgmt_only: true
+module-bays:
+  - name: PS-A
+    position: A
+  - name: PS-B
+    position: B
+  - name: FAN 1
+    position: '1'
+  - name: FAN 2
+    position: '2'
+  - name: FAN 3
+    position: '3'

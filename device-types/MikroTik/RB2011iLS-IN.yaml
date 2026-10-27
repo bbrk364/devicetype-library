@@ -1,15 +1,15 @@
 ---
 manufacturer: MikroTik
 model: RB2011iLS-IN
-<<<<<<< HEAD
-slug: rb2011ils-in
-comments: ' '
-=======
 slug: mikrotik-rb2011ils-in
+u_height: 1
+airflow: passive
+weight: 680
+weight_unit: g
+is_full_depth: false
 power-ports:
   - name: PSU0
     type: dc-terminal
->>>>>>> dd0d92f171071b1fa27fd2b8294723b6e327005d
 interfaces:
   - name: ether1
     type: 1000base-t

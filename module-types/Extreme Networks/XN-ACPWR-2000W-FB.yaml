@@ -1,0 +1,12 @@
+---
+manufacturer: Extreme Networks
+model: XN-ACPWR-2000W-FB
+part_number: XN-ACPWR-2000W-FB
+weight: 1.34
+weight_unit: kg
+airflow: front-to-rear
+comments: 2000W AC PoE PSU, for use in 5720, X465, and VSP 4900
+power-ports:
+  - name: '{module}'
+    type: iec-60320-c16
+    maximum_draw: 2000

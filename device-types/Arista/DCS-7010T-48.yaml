@@ -1,10 +1,14 @@
 ---
 manufacturer: Arista
 model: DCS-7010T-48
-slug: dcs-7010t-48
-part_number: DCS-7010T-48
+slug: arista-dcs-7010t-48
+part_number: DCS-7010T-48-F
 u_height: 1
+weight: 9.5
+weight_unit: lb
+airflow: front-to-rear
 is_full_depth: false
+comments: '[Arista 7010T Data Sheet](https://www.arista.com/assets/data/pdf/Datasheets/7010T-48_Datasheet.pdf)'
 console-ports:
   - name: Console
     type: rj-45
@@ -17,7 +21,12 @@ power-ports:
     type: iec-60320-c14
     maximum_draw: 65
     allocated_draw: 52
+front_image: true
+rear_image: false
 interfaces:
+  - name: Management1
+    type: 1000base-t
+    mgmt_only: true
   - name: Ethernet1
     type: 1000base-t
   - name: Ethernet2
@@ -122,6 +131,3 @@ interfaces:
     type: 10gbase-x-sfpp
   - name: Ethernet52
     type: 10gbase-x-sfpp
-  - name: Management1
-    type: 1000base-t
-    mgmt_only: true

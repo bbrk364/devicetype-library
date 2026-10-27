@@ -4,7 +4,6 @@ model: BIG-IP i4600
 slug: f5-big-ip-i4600
 part_number: i4600
 u_height: 1
-comments: ' '
 is_full_depth: true
 console-ports:
   - name: Console

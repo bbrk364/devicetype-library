@@ -1,65 +1,10 @@
 ---
 manufacturer: Cisco
-model: N5K 56128P
-slug: n5k-c56128p
+model: Nexus 56128P
+slug: cisco-n5k-c56128p
 part_number: N5K-C56128P
 u_height: 2
 is_full_depth: true
-subdevice_role: parent
-description: 'Nexus 56128P Chassis, 2RU, 48x 10-Gbps SFP+, 4 x 40G QSFP+ Fixed Ports (Base)'
-comments: '##  CISCO N5K-C56128P Nexus 56128p Managed L3 Switch - 48 1/10 Gigabit Sfp+ Ports & 4 40gb Ethernet/fcoe Qsfp+ Breakout Compatible Ports
-
-#####  Bandwidth : 2.56 Tbps
-
-######  Fixed Interfaces : 	48 fixed 1 Gigabit and 10 Gigabit Ethernet SFP+ ports, and four 40-Gbps QSFP+ ports
-
-#####  Form Factor : 2-rack unit
-
-#####  Expansion slots : 2
-
-#####  Power Supplies : four 2+2 redundant, hot-swappable power supplies 
-
-#####  Fan Modules : four 3+1 redundant, hot-swappable independent fans
-
-#####  Number of ports : 1152 with FEX
-
-#####  10 GE : Up to 96 wire-rate ports
-
-#####  40 GE : Up to 8 QSFP ports
-
-#####  Unified ports : Up to 48 ports (Ethernet; FCoE; 2/4/8-gigabit FC)
-
-#####  10 and 40 Gbps FCoE : Yes
-
-######  Airflow : supporting both port-side intake (red handle) and fan-side intake (blue handle) airflow options.
-
-######  Physical (height x width x depth) : 3.5 x 17.3 x 30 in (8.8 x 43.9 x 76.2 cm)
-
-######  Weight : 60 lb (2 expansion modules and 4 power supplies)
-'
-
-console-ports:
-  - name: Console
-    type: rj-45
-  - name: usb
-    type: usb-a
-power-ports:
-  - name: PS1
-    type: iec-60320-c14
-    maximum_draw: 1100
-    allocated_draw: 650
-  - name: PS2
-    type: iec-60320-c14
-    maximum_draw: 1100
-    allocated_draw: 650
-  - name: PS3
-    type: iec-60320-c14
-    maximum_draw: 1100
-    allocated_draw: 650
-  - name: PS4
-    type: iec-60320-c14
-    maximum_draw: 1100
-    allocated_draw: 650
 interfaces:
   - name: mgmt0
     type: 1000base-t
@@ -168,113 +113,19 @@ interfaces:
     type: 40gbase-x-qsfpp
   - name: Ethernet1/52
     type: 40gbase-x-qsfpp
-  - name: Ethernet2/1
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/2
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/3
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/4
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/5
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/6
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/7
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/8
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/9
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/10
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/11
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/12
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/13
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/14
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/15
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/16
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/17
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/18
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/19
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/20
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/21
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/22
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/23
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/24
-    type: 10gbase-x-sfpp
-  - name: Ethernet2/25
-    type: 40gbase-x-qsfpp
-  - name: Ethernet2/26
-    type: 40gbase-x-qsfpp
-
-  - name: Ethernet3/1
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/2
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/3
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/4
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/5
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/6
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/7
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/8
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/9
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/10
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/11
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/12
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/13
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/14
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/15
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/16
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/17
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/18
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/19
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/20
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/21
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/22
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/23
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/24
-    type: 10gbase-x-sfpp
-  - name: Ethernet3/25
-    type: 40gbase-x-qsfpp
-  - name: Ethernet3/26
-    type: 40gbase-x-qsfpp
+console-ports:
+  - name: Console
+    type: rj-45
 module-bays:
-  - name: Network Module-2
+  - name: Slot 2
     position: '2'
-  - name: Network Module-3
+  - name: Slot 3
     position: '3'
+  - name: PS1
+    position: '1'
+  - name: PS2
+    position: '2'
+  - name: PS3
+    position: '3'
+  - name: PS4
+    position: '4'

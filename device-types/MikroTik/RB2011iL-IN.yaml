@@ -1,10 +1,6 @@
 ---
 manufacturer: MikroTik
 model: RB2011iL-IN
-<<<<<<< HEAD
-slug: rb2011il-in
-comments: ' '
-=======
 slug: mikrotik-rb2011il-in
 part_number: RB2011iL-IN
 u_height: 0
@@ -19,7 +15,6 @@ power-ports:
     maximum_draw: 24
     allocated_draw: 7
     description: DC 8-30 V - 500 mA
->>>>>>> dd0d92f171071b1fa27fd2b8294723b6e327005d
 interfaces:
   - name: ether1
     type: 1000base-t

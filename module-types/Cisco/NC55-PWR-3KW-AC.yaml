@@ -2,7 +2,6 @@
 manufacturer: Cisco
 model: NC55-PWR-3KW-AC
 part_number: NC55-PWR-3KW-AC
-subdevice_role: child
 power-ports:
   - name: PS{module}
     type: iec-60320-c20

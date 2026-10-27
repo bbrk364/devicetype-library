@@ -1,68 +1,58 @@
 ---
 manufacturer: Dell
-model: PowerEdge R7525 AMD EPYC
+model: PowerEdge R7525
 slug: dell-poweredge-r7525
 u_height: 2
 is_full_depth: true
-subdevice_role: parent
-comments: '### [Dell PowerEdge R7525 /Dell 3rd Generation AMD EPYC] 
-
-
-
-<https://dl.dell.com/content/manual26894834-dell-emc-poweredge-r7525-installation-and-service-manual.pdf?language=en-us&ps=true> '
+airflow: front-to-rear
+weight: 36.3
+weight_unit: kg
+front_image: true
+rear_image: true
+comments: |
+  [Specsheet](https://i.dell.com/sites/csdocuments/Product_Docs/en/poweredge-r7525-spec-sheet.pdf)
+  [Technical Guide](https://i.dell.com/sites/csdocuments/Product_Docs/en/dell-emc-poweredge-r7525-technical-guide.pdf)
 console-ports:
-  - name: Front VGA
-    type: other
-  - name: Rear VGA
-    type: other
-  - name: Rear Serial
+  - name: Serial
     type: de-9
-  - name: VGA
-    type: other
-power-ports:
-  - name: PSU2
-    position: 'Left'
-    type: iec-60320-c14
-    maximum_draw: 800
-  - name: PSU1
-    position: 'Right'
-    type: iec-60320-c14
-    maximum_draw: 800
 interfaces:
-  - name: LOM1-1
-    description: Onboard NIC
+  - name: Gig-E 1
     type: 1000base-t
-  - name: LOM1-2
-    description: Onboard NIC  
+  - name: Gig-E 2
     type: 1000base-t
-  - name: Optional/OCP-LOM-3
-    type: 1000base-t
-  - name: Optional/OCP-LOM-4
-    type: 1000base-t
-  - name: iDRAC9
+  - name: iDRAC
     type: 1000base-t
     mgmt_only: true
-device-bays:
-  - name: TPM
-    description: TPM 2.0 Support
-  - name: PERC
-    description: 'PERC HBA345, PERC H345, PERC H745'
-  - name: OCP NIC Optional
-  - name: BOSS-2 HOT-SWAPABLE Optional
-    description: "2 X M.2 Sticks/size=240GB, 480GB"
-  - name: PCIe-Gen4-1 Optional
-    lable: Riser1
-  - name: PCIe-Gen4-2 Optional
-    lable: Riser1
-  - name: PCIe-Gen4-3 Optional
-    lable: Riser2
-  - name: PCIe-Gen4-4 Optional
-    lable: Riser3
-  - name: PCIe-Gen4-5 Optional
-    lable: Riser3
-  - name: PCIe-Gen4-6 Optional
-    lable: Riser2
-  - name: PCIe-Gen4-7 Optional
-    lable: Riser4
-  - name: PCIe-Gen4-8 Optional
-    lable: Riser4
+module-bays:
+  - name: PSU-1
+    label: '1'
+    position: PSU-1
+  - name: PSU-2
+    label: '2'
+    position: PSU-2
+  - name: OCP slot 1
+    position: OCP-1
+  - name: PCIe slot 1 - FH
+    position: PCIe-1
+    label: '1'
+  - name: PCIe slot 2 - FH
+    position: PCIe-2
+    label: '2'
+  - name: PCIe slot 3 - LP
+    position: PCIe-3
+    label: '3'
+  - name: PCIe slot 4 - FH
+    position: PCIe-4
+    label: '4'
+  - name: PCIe slot 5 - FH
+    position: PCIe-5
+    label: '5'
+  - name: PCIe slot 6 - LP
+    position: PCIe-6
+    label: '6'
+  - name: PCIe slot 7 - FH
+    position: PCIe-7
+    label: '7'
+  - name: PCIe slot 8 - FH
+    position: PCIe-8
+    label: '8'

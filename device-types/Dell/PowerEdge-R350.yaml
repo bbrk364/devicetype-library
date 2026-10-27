@@ -2,155 +2,28 @@
 manufacturer: Dell
 model: PowerEdge R350
 slug: dell-poweredge-r350
-part_number: PER350
-subdevice_role: parent
 u_height: 1
 is_full_depth: true
+weight: 13
+weight_unit: kg
 airflow: front-to-rear
-comments: '### [Dell PowerEdge R350 Rack Server Chassis SFF]  
-
-
-#### One Intel Xeon E-2300 series processor or one Intel Pentium processor
-
-
-#### Internal boot
-
-
-#######   Internal controllers: PERC H345, PERC H755, HBA355i, PERC H345f, PERC H755f, HBA355f 
-
-
-#######   Software RAID: PERC S150 
-
-
-#######   External controllers: 12Gbps SAS HBA
-
-
-#######   Boot Optimized Storage Subsystem (BOSS): 2 x M.2 240GB (RAID 1 or No RAID) or 1 x M.2 240GB (No RAID only)
-
-
-#######   Internal Dual SD Module3 : 2x microSD (16GB, 32GB or 64GB) or 1x microSD (16GB, 32GB or 64GB)
-
-
-#### Four DDR4 DIMM slots
-
-
-#### Two redundant AC power supply units
-
-
-#### Up to four 3.5-inch SAS/SATA hot-plug drives
-
-
-#### Up to eight 2.5-inch SAS/SATA hot-plug drives
-
-#### Embedded NIC: 2 x 1 GbE LOM
-
-#### Ports:
-
-#### Front Ports:
-
-#######   1 x USB 2.0
-
-#######   1 x iDRAC Direct (Micro-AB USB) port
-
-#### Rear Ports:
-
-#######   1 x USB 2.0
-
-#######   1 x iDRAC Ethernet Port
-
-#######   1 x USB 3.0
-
-#######   2 x Serial Port
-
-#######   1 x VGA
-
-#### Internal: 1 x USB 3.0 (optional)
-
-#### 2 x PCIe Gen4 slots:
-
-#######   1 x8 Gen4 (x16 connector) low profile, half length
-
-#######   1 x8 Gen4 (x8 connector) low profile, half length
-
-
-##### Height: 1.7 in. (42.8 mm)
-
-
-##### Width: 17.09 in. (434.0 mm)
-
-
-##### Depth with Bezel: 22.44 in. (570.23 mm)
-
-
-##### Depth without Bezel: 21.90 in. (556.59 mm)
-
-
-##### Weight: Max 29.98 lbs. (13.6 kg)i
-
-
-<https://www.delltechnologies.com/asset/en-si/products/servers/technical-support/dell-emc-poweredge-r350-spec-sheet.pdf>
-
-
-<https://dl.dell.com/content/manual28783714-dell-emc-poweredge-r350-technical-specifications.pdf?language=en-us&ps=true>
-
-
-<https://dl.dell.com/content/manual26953530-dell-emc-poweredge-r350-installation-and-service-manual.pdf?language=en-us&ps=true>
-
-
-For {NETBOX}'
+front_image: true
+rear_image: true
 console-ports:
-  - name: Front VGA
-    type: other
-  - name: Front USB1
-    type: usb-a
-  - name: Front Dedicated iDRAC direct USB
-    type: usb-mini-b
-  - name: Rear Serial
+  - name: Serial
     type: de-9
-  - name: Rear USB1
-    type: usb-a
-  - name: Rear USB2
-    type: usb-a
-  - name: internal USB Optional
-    type: usb-a
-  - name: Rear VGA
-    type: other
-power-ports:
-  - name: PSU1
-    type: iec-60320-c14
-    maximum_draw: 600
-  - name: PSU2
-    type: iec-60320-c14
-    maximum_draw: 600
+module-bays:
+  - name: PSU-1
+    label: '1'
+    position: '1'
+  - name: PSU-2
+    label: '2'
+    position: '2'
 interfaces:
-  - name: LOM1
+  - name: Gig-E 1
     type: 1000base-t
-  - name: LOM2
+  - name: Gig-E 2
     type: 1000base-t
-  - name: iDRAC9
+  - name: iDRAC
     type: 1000base-t
     mgmt_only: true
-module-bays:
-  - name: PERC
-    description: 'PERC H355, PERC H345, H755, HBA35, S150'
-  - name: Optional BOSS-2 Removed
-    description: 'DELL BOSS M.2 Controller Card'
-  - name: PCIe-Gen4-1
-  - name: PCIe-Gen4-2
-device-bays:
-  - name: Drive bay-0/SFF
-    description: '2.5" SFF'
-  - name: Drive bay-1/SFF
-    description: '2.5" SFF'
-  - name: Drive bay-2/SFF
-    description: '2.5" SFF'
-  - name: Drive bay-3/SFF
-    description: '2.5" SFF'
-  - name: Drive bay-4/SFF
-    description: '2.5" SFF'
-  - name: Drive bay-5/SFF
-    description: '2.5" SFF'
-  - name: Drive bay-6/SFF
-    description: '2.5" SFF'
-  - name: Drive bay-7/SFF
-    description: '2.5" SFF'

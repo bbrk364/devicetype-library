@@ -5,8 +5,8 @@ slug: cisco-asr-920-24sz
 u_height: 1
 is_full_depth: false
 airflow: front-to-rear
-subdevice_role: parent
-comments: '####  [Cisco ASR 920: High-Port-Density Models Data Sheet] | (https://www.cisco.com/c/en/us/products/collateral/routers/asr-920-series-aggregation-services-router/datasheet-c78-733397.html) '
+comments: |
+  [Cisco ASR 920: High-Port-Density Models Data Sheet](https://www.cisco.com/c/en/us/products/collateral/routers/asr-920-series-aggregation-services-router/datasheet-c78-733397.html)
 console-ports:
   - name: con0
     type: rj-45
@@ -70,7 +70,7 @@ interfaces:
 module-bays:
   - name: PS0
     label: Power Supply 0
-    position: PS0
+    position: '0'
   - name: PS1
     label: Power Supply 1
-    position: PS1
+    position: '1'

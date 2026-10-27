@@ -1,59 +1,20 @@
 ---
 manufacturer: Dell
 model: PowerEdge FC640
-slug: dell-poweredge-FC640
-part_number: PEFC640
+slug: dell-poweredge-fc640
 u_height: 0
 is_full_depth: false
 subdevice_role: child
-subdevice_role: parent
-airflow: front-to-rear
-comments: '## [Dell PowerEdge FC640 2 X 2.5" SSF ]  
-
-
-<https://dl.dell.com/topicspdf/poweredge-fc640_owners-manual_en-us.pdf> '
-console-ports:
-  - name: Front USB1
-    type: usb-a
-  - name: Front USB2/iDRAC Direct port
-    type: usb-micro-b
-  - name: Internal USB3
-    type: usb-a
-  - name: Internal MicroSD (IDSDM)
-    type: other
-  - name: VFLASH
-    type: other
-  - name: TPM
-    type: other 
+weight: 7.7
+weight_unit: kg
 interfaces:
-  - name: LOM1
-    description:  interfaces from bNDC 
-    type: 10gbase-x-sfpp
-  - name: LOM2
-    description:  interfaces from bNDC 
-    type: 10gbase-x-sfpp
-  - name: MEZZ1_FAB_C1
-    description:  interfaces from  MEZZ1_FAB_C/PCIe-Gen3 
-    type: 10gbase-x-sfpp
-  - name: MEZZ1_FAB_C2
-    description:  interfaces from  MEZZ1_FAB_C/PCIe-Gen3 
-    type: 10gbase-x-sfpp
-  - name: MEZZ2_FAB_B1
-    description:  interfaces from  MEZZ1_FAB_B/PCIe-Gen3 
-    type: 10gbase-x-sfpp
-  - name: MEZZ2_FAB_B2
-    description:  interfaces from  MEZZ1_FAB_B/PCIe-Gen3 
-    type: 10gbase-x-sfpp
-  - name: iDRAC9
-    type: 1000base-t
-device-bays:
-  - name: bNDC
-    description: 'Network Daughter Card connector'
-  - name: MEZZ1_FAB_C/PCIe-Gen3
-    description: 'PCIe mezzanine card connector for the expansion bus'
-  - name: MEZZ2_FAB_B/PCIe-Gen3
-    description: 'PCIe mezzanine card connector for the expansion bus'
-  - name: BOSS-M.2 
-    description: 'BOSS card connector w/ 2 M.2 SSD'
-  - name: Drive bay-0/SSF
-  - name: Drive bay-1/SSF
+  - name: iDRAC
+    type: 1000base-kx
+    mgmt_only: true
+module-bays:
+  - name: Slot A bNDC
+    position: A
+  - name: Slot B Mezzanine
+    position: B
+  - name: Slot C Mezzanine
+    position: C

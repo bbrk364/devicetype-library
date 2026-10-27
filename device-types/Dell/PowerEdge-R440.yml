@@ -4,150 +4,28 @@ model: PowerEdge R440
 slug: dell-poweredge-r440
 u_height: 1
 is_full_depth: true
-subdevice_role: parent
+weight: 17.64
+weight_unit: kg
 airflow: front-to-rear
-weight: 39.0
-weight_unit: lb
-comments: '## [Dell PowerEdge R440/Dell 14th Gen]  
-
-
-###### Feature  PowerEdge R440 technical specification
-
-##      Base: PowerEdge R440 Server
-
-###     Processor:
-
-######  Up to two Intel® Xeon® Scalable processors, up to 22 cores per processor
-
-######  
-
-######  Memory: 16 DDR4 DIMM slots, Supports RDIMM /LRDIMM, speeds up to 2666MT/s, 1TB max
-
-
-###     Storage Controllers:
-
-######  Internal controllers: PERC H330, H730p, H740p, HBA330, Software RAID (SWRAID) S140
-
-######  Boot Optimized Storage Subsystem: HWRAID 2 x M.2 SSDs 120GB, 240 GB
-
-######  External PERC (RAID): H840
-
-######  External HBAs (non-RAID): 12 Gbps SAS HBA
-
-###     Drive Bays:
-
-######  Front drive bays: Up to 10 x 2.5” SAS/SATA (HDD/SSD) with up to 4 NVMe SSD max 48TB or up to 4 x 3.5 SAS/SATA HDD max 56TB
-
-######  Optional DVD-ROM, DVD+RW
-
-###     Power Supplies: Bronze 450W, Platinum 550W
-
-
-###     Fans: Six fans for N+1 redundancy
-
-###     Bezel:
-
-######  Optional LCD or security bezel
-
-###     Sizing:
-
-######  Form Factor: 1U Rack Server
-
-######  Chassis: 728.23 mm Front Bezel to Rear PSU Handle 714.58 mm Front plate (no bezel) to Rear PSU Handle
-
-###     Security:
-
-######  TPM 1.2/2.0 optional
-
-######  Cryptographically signed firmware
-
-######  Silicon Root of Trust
-
-######  Secure Boot
-
-######  System Lockdown
-
-######  System Erase
-
-###     I/O & Ports:
-
-#####   Network options
-
-######  2 x 1GE LOM + (optional) LOM Riser 2 x 1GE or 2x 10GE SFP+ or 2 x 10GE BaseT
-
-#####   Front ports: Video, 1 x USB 2.0, available USB 3.0, dedicated IDRAC Direct USB
-
-#####   Rear ports: Video, serial, 2 x USB 3.0, dedicated iDRAC network port
-
-#####   Riser options also available include 2 x HH/HL or 1 x FH/HL
-
-<https://dl.dell.com/content/manual43617227-dell-emc-poweredge-r440-installation-and-service-manual.pdf?language=en-us>
-
-<https://dl.dell.com/content/manual37143262-dell-emc-poweredge-r440-technical-specifications.pdf?language=en-us>
-
-
-fOR {NETBOX}'
+front_image: true
+rear_image: true
 console-ports:
-  - name: Optional Rear Serial
+  - name: Serial
     type: de-9
-  - name: Front VGA
-    type: other
-  - name: Rear VGA
-    type: other
-  - name: Internal USB1
-    type: usb-a
-  - name: Front USB1
-    type: usb-a
-  - name: Front Dedicated iDRAC direct USB
-    type: usb-micro-ab
-  - name: Rear USB1
-    type: usb-a
-  - name: Rear USB2
-    type: usb-a
-power-ports:
-  - name: PSU0
-    type: iec-60320-c14
-    maximum_draw: 550
-  - name: PSU1
-    type: iec-60320-c14
-    maximum_draw: 550
+module-bays:
+  - name: PSU 1
+    position: '1'
+  - name: PSU 2
+    position: '2'
 interfaces:
-  - name: OB-E-1
+  - name: Gig-E 1
     type: 1000base-t
-  - name: OB-E-2
+  - name: Gig-E 2
     type: 1000base-t
-  - name: iDRAC7
+  - name: Gig-E 3
+    type: 1000base-t
+  - name: Gig-E 4
+    type: 1000base-t
+  - name: iDRAC
     type: 1000base-t
     mgmt_only: true
-module-bays:
-  - name: PERC
-    description: ' PERC H330, PERC H730P 2GB NV, PERC H740P 8GB NV'
-  - name: Optional BOSS-2 Removed
-    description: '51CN2 - DELL BOSS M.2 Controller Card'
-  - name: SLOT-1 PCIe3
-    position: PCIe-1
-    label: '1'
-  - name: SLOT-2 PCIe3
-    position: PCIe-2
-    label: '2'
-device-bays:
-  - name: Drive bay-0/SFF
-    description: '2.5" SFF'
-  - name: Drive bay-1/SFF
-    description: '2.5" SFF'
-  - name: Drive bay-2/SFF
-    description: '2.5" SFF'
-  - name: Drive bay-3/SFF
-    description: '2.5" SFF'
-  - name: Drive bay-4/SFF
-    description: '2.5" SFF'
-  - name: Drive bay-5/SFF
-    description: '2.5" SFF'
-  - name: Drive bay-6/SFF
-    description: '2.5" SFF'
-  - name: Drive bay-7/SFF
-    description: '2.5" SFF'
-  - name: Drive bay-8/SFF
-    description: '2.5" SFF'
-  - name: Drive bay-9/SFF
-    description: '2.5" SFF'    

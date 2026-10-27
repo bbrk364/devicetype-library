@@ -1,152 +1,81 @@
 ---
 manufacturer: Cisco
-description: C9200L-24T-4G-E /w 24 ports data & 4x 1G fixed uplinks
 model: C9200L-24T-4G-E
+slug: cisco-c9200l-24t-4g-e
+description: Cisco Catalyst 9200L-24T-4G-E Layer 3 switch with 24x1 GbE RJ45 and 4x1 GbE SFP uplinks
 part_number: C9200L-24T-4G-E
-slug: c9200l-24t-4g-e
-u_height: 1
+u_height: 1.0
 is_full_depth: false
-Weight: 9.6
-Weight unit: Pounds
-subdevice_role: parent
-comments: '### [Cisco Catalyst C9200L-24T-4G-A Series Switches Data Sheet]
-
-###### Model                                            : C9200L-24T-4G-E
-
-###### Downlinks total 10/100/1000 or PoE+ copper ports : 24 ports data
-
-###### Uplink configuration                             : 4x 1G fixed uplinks
-
-###### Default primary AC power supply                  : PWR-C5-125WAC
-
-###### Fans                                             : FRU redundant
-
-###### Software                                         : Network Essentials
-
-###### Stacking bandwidth                               : 80 Gbps
-
-###### DRAM                                             : 2 GB
-
-###### Flash                                            : 4 GB
-
-###### Switching capacity                               : 56 Gbps
-
-###### Forwarding rate                                  : 83.33 Mpps
-
-###### Chassis Dimensions                               : 1.73 x 17.5 x 11.3 in/4.4 x 44.5 x 28.8 cm
-
-###### Weight                                           : 9.6 LBS
-
-
-(https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.html)'
+airflow: front-to-rear
+weight: 4.3
+weight_unit: kg
+comments: |
+  - '[Cisco Catalyst 9200L Series Data Sheet](https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.html)'
 console-ports:
-  - name: Console
+  - name: con0
     type: rj-45
-  - name: usb
-    type: usb-mini-b
-power-ports:
-  - name: PS-1
-    type: iec-60320-c14
-    maximum_draw: 125
-  - name: PS-2
-    type: iec-60320-c14
-    maximum_draw: 125
+module-bays:
+  - name: PSU 1
+    position: '1'
+  - name: PSU 2
+    position: '2'
 interfaces:
-  - name: GigabitEthernet1/0/1
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/2
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/3
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/4
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/5
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/6
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/7
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/8
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/9
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/10
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/11
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/12
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/13
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/14
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/15
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/16
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/17
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/18
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/19
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/20
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/21
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/22
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/23
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/0/24
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/1/1
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/1/2
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/1/3
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet1/1/4
-    type: 1000base-t
-    mgmt_only: false
-  - name: GigabitEthernet0
+  - name: GigabitEthernet0/0
     type: 1000base-t
     mgmt_only: true
-module-bays:
-  - name: StackPort1/1
-    type: cisco-stackwise-80
-    Description: cisco-stackwise-80
-  - name: StackPort1/2
-    type: cisco-stackwise-80
-    Description: cisco-stackwise-80
-  - name: PS-A
-    position: A
-  - name: PS-B
-    position: B
+  - name: GigabitEthernet1/0/1
+    type: 1000base-t
+  - name: GigabitEthernet1/0/2
+    type: 1000base-t
+  - name: GigabitEthernet1/0/3
+    type: 1000base-t
+  - name: GigabitEthernet1/0/4
+    type: 1000base-t
+  - name: GigabitEthernet1/0/5
+    type: 1000base-t
+  - name: GigabitEthernet1/0/6
+    type: 1000base-t
+  - name: GigabitEthernet1/0/7
+    type: 1000base-t
+  - name: GigabitEthernet1/0/8
+    type: 1000base-t
+  - name: GigabitEthernet1/0/9
+    type: 1000base-t
+  - name: GigabitEthernet1/0/10
+    type: 1000base-t
+  - name: GigabitEthernet1/0/11
+    type: 1000base-t
+  - name: GigabitEthernet1/0/12
+    type: 1000base-t
+  - name: GigabitEthernet1/0/13
+    type: 1000base-t
+  - name: GigabitEthernet1/0/14
+    type: 1000base-t
+  - name: GigabitEthernet1/0/15
+    type: 1000base-t
+  - name: GigabitEthernet1/0/16
+    type: 1000base-t
+  - name: GigabitEthernet1/0/17
+    type: 1000base-t
+  - name: GigabitEthernet1/0/18
+    type: 1000base-t
+  - name: GigabitEthernet1/0/19
+    type: 1000base-t
+  - name: GigabitEthernet1/0/20
+    type: 1000base-t
+  - name: GigabitEthernet1/0/21
+    type: 1000base-t
+  - name: GigabitEthernet1/0/22
+    type: 1000base-t
+  - name: GigabitEthernet1/0/23
+    type: 1000base-t
+  - name: GigabitEthernet1/0/24
+    type: 1000base-t
+  - name: GigabitEthernet1/1/1
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/1/2
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/1/3
+    type: 1000base-x-sfp
+  - name: GigabitEthernet1/1/4
+    type: 1000base-x-sfp

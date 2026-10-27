@@ -2,7 +2,6 @@
 manufacturer: Cisco
 model: N540-PWR400-A
 part_number: N540-PWR400-A
-subdevice_role: child
 power-ports:
   - name: '{module}'
     type: iec-60320-c16

@@ -1,48 +1,20 @@
 ---
 manufacturer: Cisco
-model: C9200-48P
+model: Catalyst 9200-48P
 part_number: C9200-48P
 slug: cisco-c9200-48p
 u_height: 1
 is_full_depth: false
-comments: '[Cisco Catalyst 9200 Series Switches Data Sheet]
-
-###### Model                                            : C9200-48P
-
-###### Downlinks total 10/100/1000 or PoE+ copper ports : 48-port Full PoE+
-
-###### Uplink configuration                             : Modular uplink options
-
-###### Default primary AC power supply                  : PWR-C6-1KWAC
-
-###### Fans                                             : FRU redundant
-
-###### Stacking bandwidth                               : 160 Gbps
-
-###### DRAM                                             : 4 GB
-
-###### Flash                                            : 4 GB
-
-###### Switching capacity                               : 176 Gbps
-
-###### Forwarding rate                                  : 261.9 Mpps
-
-###### Chassis Dimensions                               : 1.73 x 17.5 x 13.8 in/4.4 x 44.5 x 35.0 cm
-
-
-(https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.html)'
+front_image: true
+weight: 5.5
+weight_unit: kg
+airflow: front-to-rear
+comments: '[Cisco Catalyst 9200 Series Switches Data Sheet](https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.html)'
 console-ports:
   - name: Console
     type: rj-45
   - name: usb
     type: usb-mini-b
-power-ports:
-  - name: PS-1
-    type: iec-60320-c14
-    maximum_draw: 740
-  - name: PS-2
-    type: iec-60320-c14
-    maximum_draw: 740
 interfaces:
   - name: GigabitEthernet1/0/1
     type: 1000base-t
@@ -234,26 +206,19 @@ interfaces:
     poe_type: type2-ieee802.3at
   - name: GigabitEthernet1/0/48
     type: 1000base-t
-<<<<<<< HEAD
-    mgmt_only: false
-  - name: GigabitEthernet0
-=======
     poe_mode: pse
     poe_type: type2-ieee802.3at
   - name: GigabitEthernet0/0
->>>>>>> dd0d92f171071b1fa27fd2b8294723b6e327005d
     type: 1000base-t
     mgmt_only: true
 module-bays:
   - name: Network Module
     position: '1'
   - name: StackPort1/1
-<<<<<<< HEAD
-    type: cisco-stackwise-160
-  - name: StackPort1/2
-    type: cisco-stackwise-160
-=======
     position: 1/1
   - name: StackPort1/2
     position: 1/2
->>>>>>> dd0d92f171071b1fa27fd2b8294723b6e327005d
+  - name: PS-0
+    position: '0'
+  - name: PS-1
+    position: '1'

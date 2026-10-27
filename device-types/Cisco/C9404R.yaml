@@ -1,14 +1,16 @@
 ---
 manufacturer: Cisco
-model: C9404R
-slug: c9404r
+model: Catalyst 9404R
+slug: cisco-catalyst-9404r
 part_number: C9404R
+comments: '[Cisco Catalyst 9400 Series Chassis Data Sheet](https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html)'
 u_height: 6
 weight: 17.21
 weight_unit: kg
 is_full_depth: true
+front_image: true
+rear_image: true
 airflow: right-to-left
-comments: '### [Cisco Catalyst 9400 Series Chassis Data Sheet] | (https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html)'
 module-bays:
   - name: Slot 1 Line-card
     label: '1'
@@ -34,3 +36,7 @@ module-bays:
   - name: Power Supply Module 4
     label: PS4
     position: '4'
+  - name: Fan Tray
+    label: Fan
+    position: '1'
+    description: front and rear serviceable and hot-swappable fan tray

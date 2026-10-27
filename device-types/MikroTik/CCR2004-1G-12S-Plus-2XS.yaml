@@ -5,16 +5,11 @@ slug: mikrotik-ccr2004-1g-12s-plus-2xs
 part_number: CCR2004-1G-12S+2XS
 is_full_depth: false
 u_height: 1
-console-ports:
-  - name: serial0
-    type: rj-45
-power-ports:
-  - name: power1
-    type: iec-60320-c14
-    maximum_draw: 49
-  - name: power2
-    type: iec-60320-c14
-    maximum_draw: 49
+comments: |
+  [Product Page](https://mikrotik.com/product/ccr2004_1g_12s_2xs)
+front_image: true
+rear_image: false
+is_powered: true
 interfaces:
   - name: ether1
     type: 1000base-t
@@ -46,3 +41,13 @@ interfaces:
     type: 25gbase-x-sfp28
   - name: sfp28-2
     type: 25gbase-x-sfp28
+console-ports:
+  - name: serial0
+    type: rj-45
+power-ports:
+  - name: power1
+    type: iec-60320-c14
+    maximum_draw: 49
+  - name: power2
+    type: iec-60320-c14
+    maximum_draw: 49

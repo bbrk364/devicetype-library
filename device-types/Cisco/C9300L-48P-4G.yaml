@@ -1,24 +1,16 @@
 ---
 manufacturer: Cisco
-model: C9300L-48P-4G
+model: Catalyst 9300L-48P-4G
 part_number: C9300L-48P-4G
 slug: cisco-c9300l-48p-4g
 u_height: 1
 is_full_depth: true
+front_image: true
 console-ports:
-  - name: Rear con 0
+  - name: con 0
     type: rj-45
-  - name: USB Mini Console
+  - name: usb
     type: usb-mini-b
-  - name: USB Port
-    type: usb-a 
-power-ports:
-  - name: PS-A
-    type: iec-60320-c16
-    maximum_draw: 715
-  - name: PS-B
-    type: iec-60320-c16
-    maximum_draw: 715
 interfaces:
   - name: GigabitEthernet1/0/1
     type: 1000base-t
@@ -220,18 +212,21 @@ interfaces:
     type: 1000base-x-sfp
   - name: GigabitEthernet1/1/4
     type: 1000base-x-sfp
-  - name: GigabitEthernet0/0
-    type: 1000base-t
-    mgmt_only: true
-module-bays:
-  - name: STACK0
-    type: cisco-stackwise-320
-  - name: STACK1
-    type: cisco-stackwise-320
   - name: StackPort1/1
     type: cisco-stackwise
   - name: StackPort1/2
     type: cisco-stackwise
+  - name: GigabitEthernet0/0
+    type: 1000base-t
+    mgmt_only: true
+module-bays:
+  - name: PS-A
+    position: A
+  - name: PS-B
+    position: B
   - name: FAN 1
+    position: '1'
   - name: FAN 2
+    position: '2'
   - name: FAN 3
+    position: '3'

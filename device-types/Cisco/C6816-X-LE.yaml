@@ -1,10 +1,11 @@
 ---
 manufacturer: Cisco
-model: C6816-X-LE
+model: Catalyst 6816-X-LE
 slug: cisco-c6816-x-le
 part_number: C6816-X-LE
 u_height: 2
 is_full_depth: false
+front_image: true
 console-ports:
   - name: con0
     type: rj-45

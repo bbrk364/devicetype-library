@@ -5,6 +5,8 @@ slug: hpe-aruba-2540-48g-4sfpp
 part_number: JL355A
 u_height: 1
 is_full_depth: false
+front_image: true
+rear_image: false
 comments: '[Aruba 2540-48G-4SFP+ Datasheet](https://www.arubanetworks.com/assets/ds/DS_2540SwitchSeries.pdf)'
 weight: 3100
 weight_unit: g
@@ -12,16 +14,11 @@ power-ports:
   - name: PS1
     type: iec-60320-c14
     maximum_draw: 47
->>>>>>> dd0d92f171071b1fa27fd2b8294723b6e327005d:device-types/HPE/Aruba-2540-48G-4SFPP.yaml
 console-ports:
   - name: Console
     type: rj-45
   - name: USB Console
     type: usb-micro-b
-power-ports:
-  - name: PSU1
-    type: iec-60320-c14
-    maximum_draw: 459
 interfaces:
   - name: '1'
     type: 1000base-t

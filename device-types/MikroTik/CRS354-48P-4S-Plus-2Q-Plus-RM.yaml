@@ -5,14 +5,6 @@ slug: mikrotik-crs354-48p-4s-plus-2q-plus-rm
 part_number: CRS354-48P-4S+2Q+RM
 is_full_depth: false
 u_height: 1
-comments: ' '
-console-ports:
-  - name: serial0
-    type: rj-45
-power-ports:
-  - name: power1
-    type: iec-60320-c14
-    maximum_draw: 800
 interfaces:
   - name: ether1
     type: 1000base-t
@@ -110,6 +102,10 @@ interfaces:
     type: 1000base-t
   - name: ether48
     type: 1000base-t
+  - name: ether49
+    type: 100base-tx
+    label: MGMT
+    mgmt_only: true
   - name: sfp-sfpplus1
     type: 10gbase-x-sfpp
   - name: sfp-sfpplus2
@@ -122,3 +118,11 @@ interfaces:
     type: 40gbase-x-qsfpp
   - name: qsfpplus2
     type: 40gbase-x-qsfpp
+console-ports:
+  - name: serial0
+    type: rj-45
+    label: CONSOLE
+power-ports:
+  - name: power1
+    type: iec-60320-c14
+    maximum_draw: 800

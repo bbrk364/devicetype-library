@@ -4,12 +4,7 @@ model: CCR1009-7G-1C-1S+PC
 slug: mikrotik-ccr1009-7g-1c-1s-plus-pc
 is_full_depth: false
 u_height: 1
-<<<<<<< HEAD:device-types/MikroTik/CCR1009-7G-1C-1S+PC.yaml
-comments: 
-
-=======
 airflow: front-to-rear
->>>>>>> dd0d92f171071b1fa27fd2b8294723b6e327005d:device-types/MikroTik/CCR1009-7G-1C-1S-Plus-PC.yaml
 interfaces:
   - name: ether1
     type: 1000base-t

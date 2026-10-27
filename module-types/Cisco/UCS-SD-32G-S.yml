@@ -3,4 +3,3 @@ manufacturer: Cisco
 model: UCS-SD-32G-S
 part_number: UCS-SD-32G-S
 comments: 32 GB SD Card for UCS servers
-subdevice_role: child
