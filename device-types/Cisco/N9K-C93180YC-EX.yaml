@@ -3,14 +3,29 @@ manufacturer: Cisco
 model: Nexus 93180YC-EX
 part_number: N9K-C93180YC-EX
 slug: cisco-n9k-c93180yc-ex
+subdevice_role: parent
+decscription: 'N9K-C93180YC-EX, Cisco Nexus 9300-EX Data Center Switch, 48x1/10/25G SFP+, 6x40/100G QSFP28'
+comments: |
+  N9K-C93180YC-EX, Cisco Nexus 9300 with 48p 1/10/25G SFP28 and 6p 40/100G QSFP28.
+  Airflow: Port-side intake or port-side exhaust
+  Dimensions (H x W x D): 1.72 x 17.3 x 22.5 in (4.4 x 43.9 x 57.1 cm)
+  Datasheet: https://www.cisco.com/c/en/us/products/switches/nexus-9000-series-switches/index.html
+  **Power:** Dual 500W AC, 1200W HVAC/HVDC, or 930W DC power supplies
+airflow: front-to-rear
 front_image: true
 rear_image: true
-weight: 7.9
-weight_unit: kg
+weight: 17.2
+weight_unit: lb
 u_height: 1
+custom_fields:
+  device_height_in: 1.72
+  device_width_in: 17.30
+  device_depth_in: 22.50
+  hw_eos_date: "2028-10-31"
+  default_license: "Advantage"  
 is_full_depth: true
 console-ports:
-  - name: console
+  - name: console (RJ-45)
     type: rj-45
 interfaces:
   - name: Ethernet1/1
@@ -121,9 +136,14 @@ interfaces:
     type: 100gbase-x-qsfp28
   - name: Ethernet1/54
     type: 100gbase-x-qsfp28
-  - name: mgmt0
+  - name: mgmt0 (RJ-45)
     type: 1000base-t
     mgmt_only: true
+    description: "Copper out-of-band management"
+  - name: mgmt0 (SFP)
+    type: 1000base-x-sfp
+    mgmt_only: true
+    description: "Fiber out-of-band management"    
 module-bays:
   - name: PS1
     position: '1'

@@ -3,13 +3,34 @@ manufacturer: Cisco
 model: Nexus 9336C-FX2
 part_number: N9K-C9336C-FX2
 slug: cisco-n9k-c9336c-fx2
+subdevice_role: parent
+description: N9K-C9336C-FX2, Cisco Nexus 9336C-FX2 Switch, 36x100G QSFP28/Fixed/40G support
 front_image: true
 rear_image: true
 u_height: 1
 is_full_depth: true
-weight: 8.5
-weight_unit: kg
-comments: '[Cisco Nexus 9300 Datacenter FX2 Switches Datasheet](https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-742282.html)'
+weight: 18.74
+weight_unit: lb
+custom_fields:
+  device_height_in: 1.72
+  device_width_in: 17.30
+  device_depth_in: 24.50
+comments: |
+  **Cisco Nexus 9336C-FX2 Specifications & FRU Notes:**
+  - **Datasheet Reference:** [Cisco Nexus 9300 Datacenter FX2 Switches Datasheet](https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-742282.html)
+  - **Physical Dimensions (H x W x D):** 1.72 x 17.30 x 24.50 in (4.4 x 43.9 x 62.3 cm)
+  - **Rack-Mount Kit Options:**
+    - `NXK-ACC-KIT-1RU`: Standard 1-RU fixed accessory kit with 4-post slider rails, front mounting brackets, and rear brackets
+  - **Supported Power Supply Options (1+1 Redundant):**
+    - `NXA-PAC-750W-PI` / `PE`: 750W AC Power Supply (Intake/Burgundy or Exhaust/Blue)
+    - `NXA-PAC-1100W-PI2/PI3` / `PE2/PE3`: 1100W AC Power Supply (Intake/Burgundy or Exhaust/Blue)
+    - `NXA-PHV-1100W-PI` / `PE`: 1100W HVAC/HVDC Power Supply (Intake/Burgundy or Exhaust/Blue)
+    - `NXA-PDC-1100W-PI` / `PE`: 1100W -48V DC Power Supply (Intake/Burgundy or Exhaust/Blue)
+  - **Supported Fan Module Options (3 Trays Required):**
+    - `NXA-FAN-65CFM-PI`: Port-side intake fan module (Burgundy coloring)
+    - `NXA-FAN-65CFM-PE`: Port-side exhaust fan module (Blue coloring)
+  - **Port Layout:** 36x 40/100G QSFP28 fixed ports supporting flexible breakout and 10G/40G/100G speeds.
+  - **Management Interfaces:** `mgmt0` (1000base-t RJ-45) and `mgmt1` (1000base-x SFP).
 console-ports:
   - name: console
     type: rj-45
@@ -88,22 +109,29 @@ interfaces:
     type: 100gbase-x-qsfp28
   - name: Ethernet1/36
     type: 100gbase-x-qsfp28
-  - name: mgmt0
+  - name: mgmt0 (RJ-45)
     type: 1000base-t
+    description: "Copper out-of-band management port"
     mgmt_only: true
-  - name: mgmt1
+  - name: mgmt1 (SFP)
     type: 1000base-x-sfp
+    description: "Fiber out-of-band management port"
     mgmt_only: true
 module-bays:
   - name: PS1
-    label: Power Supply 1
     position: '1'
+    label: Power Supply 1
+    description: "Supports NXA-PAC-750W-PI/PE, NXA-PAC-1100W-PI2/PI3/PE2/PE3, NXA-PHV-1100W-PI/PE, or NXA-PDC-1100W-PI/PE"
   - name: PS2
-    label: Power Supply 2
     position: '2'
+    label: Power Supply 2
+    description: "Supports NXA-PAC-750W-PI/PE, NXA-PAC-1100W-PI2/PI3/PE2/PE3, NXA-PHV-1100W-PI/PE, or NXA-PDC-1100W-PI/PE"
   - name: Fan 1
     position: '1'
+    label: Fan Module 1 (NXA-FAN-65CFM-PI/PE)
   - name: Fan 2
     position: '2'
+    label: Fan Module 2 (NXA-FAN-65CFM-PI/PE) 
   - name: Fan 3
     position: '3'
+    label: Fan Module 3 (NXA-FAN-65CFM-PI/PE)
