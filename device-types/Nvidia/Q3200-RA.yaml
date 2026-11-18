@@ -1,0 +1,187 @@
+---
+manufacturer: Nvidia
+model: Quantum-X800 Q3200-RA
+part_number: Q3200-RA
+slug: nvidia-quantum-x800-q3200-ra
+subdevice_role: parent
+description: 'Q3200-RA, NVIDIA Quantum-X800 72-Port 800Gb/s XDR InfiniBand Switch, 2U, 36x Twin-Port OSFP-RHS, Rear-to-Front (C2S) Airflow'
+u_height: 2
+is_full_depth: true
+front_image: false
+rear_image: false
+weight: 56.0
+weight_unit: lb
+airflow: rear-to-front
+custom_fields:
+  device_height_in: 3.46
+  device_width_in: 17.24
+  device_depth_in: 29.53
+  eol_status: "Active"
+  end_of_sale_date: null
+  last_day_of_support_date: null
+comments: |
+  **NVIDIA Quantum-X800 (`Q3200-RA`) Specifications & Family-Wide Configuration Options:**
+
+  - **Platform Architecture:** 2U Managed XDR InfiniBand Switch powered by 2x NVIDIA Quantum-X800 Switch ASICs (57.6 Tb/s aggregate switching capacity; 72x 800Gb/s XDR ports via 36x twin-port OSFP-RHS cages).
+  - **NVIDIA Quantum-X800 Series Model Options:** 
+    - `Q3200-RA` (This Template): 2U, 72x 800Gb/s XDR ports (36x OSFP-RHS cages), Air-Cooled, Connector-to-System / Rear-to-Front (`rear-to-front`) airflow
+    - `Q3400-RA`: 4U, 144x 800Gb/s XDR ports (72x OSFP-RHS cages), Air-Cooled, Connector-to-System / Rear-to-Front (`rear-to-front`) airflow
+    - `Q3400-FA`: 4U, 144x 800Gb/s XDR ports (72x OSFP-RHS cages), Air-Cooled, System-to-Connector / Front-to-Rear (`front-to-rear`) airflow
+    - `Q3401-RD`: 4U, 144x 800Gb/s XDR ports (72x OSFP-RHS cages), Direct-to-Chip (DLC) Liquid-Cooled with Rear-to-Front (`rear-to-front`) residual airflow
+  - **Physical Dimensions (H x W x D):** 3.46 x 17.24 x 29.53 in (88.0 x 438.0 x 750.0 mm, 2RU)
+  - **Chassis Weight:** ~56.0 lb (25.4 kg) fully populated with 2x PSUs and 4x fan modules
+  - **Supported Power Supply Options (1+1 Redundant Hot-Swappable):**
+    - High-efficiency 2000W / 3000W AC (200–277V) Titanium-rated hot-swappable PSU modules (`-RA` Rear-to-Front airflow matched)
+    - High-Voltage DC (HVDC 240V–380V) / -48V DC redundant power supply options
+  - **Supported Fan Module Options (4x Hot-Swappable N+1 Redundant Trays):**
+    - Counter-rotating high-static-pressure hot-swappable fan modules (`-RA` Rear-to-Front airflow matched)
+  - **Port & Breakout Configuration Options (36x OSFP-RHS Cages):**
+    - **Native XDR Mode:** 72x 800Gb/s InfiniBand ports (2x 800Gb/s per twin-port OSFP-RHS cage)
+    - **Breakout Mode:** Up to 144x 400Gb/s NDR / XDR-200 ports (using 2:1 or 4:1 passive DAC, ACC, or optical splitters)
+  - **Supported Transceiver & Cable Options (NVIDIA LinkX 800G XDR):**
+    - 800G Twin-Port OSFP-RHS Multimode Optical Transceivers (`MMS4X00-NS400` / `MMS4X50-NM` series, MPO-12 APC)
+    - 800G Twin-Port OSFP-RHS Single-Mode DR8/2xFR4 Optical Transceivers
+    - 800G OSFP-RHS Direct Attach Copper (DAC) & Active Copper Cables (ACC)
+  - **Management & Console Interfaces:** 2x `mgmt0`/`mgmt1` (1000base-t RJ-45 out-of-band management), 1x `console` (RJ-45 RS-232), and 1x `usb0` (USB 3.0 Type-A).
+
+console-ports:
+  - name: console
+    type: rj-45
+  - name: usb0
+    type: usb-a
+interfaces:
+  - name: swp1
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 1
+  - name: swp2
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 2
+  - name: swp3
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 3
+  - name: swp4
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 4
+  - name: swp5
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 5
+  - name: swp6
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 6
+  - name: swp7
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 7
+  - name: swp8
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 8
+  - name: swp9
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 9
+  - name: swp10
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 10
+  - name: swp11
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 11
+  - name: swp12
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 12
+  - name: swp13
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 13
+  - name: swp14
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 14
+  - name: swp15
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 15
+  - name: swp16
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 16
+  - name: swp17
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 17
+  - name: swp18
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 18
+  - name: swp19
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 19
+  - name: swp20
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 20
+  - name: swp21
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 21
+  - name: swp22
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 22
+  - name: swp23
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 23
+  - name: swp24
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 24
+  - name: swp25
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 25
+  - name: swp26
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 26
+  - name: swp27
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 27
+  - name: swp28
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 28
+  - name: swp29
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 29
+  - name: swp30
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 30
+  - name: swp31
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 31
+  - name: swp32
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 32
+  - name: swp33
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 33
+  - name: swp34
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 34
+  - name: swp35
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 35
+  - name: swp36
+    type: 800gbase-x-osfp
+    description: 2x 800Gb/s XDR InfiniBand Twin-Port OSFP-RHS Cage 36
+  - name: mgmt0 (rj-45)
+    type: 1000base-t
+    mgmt_only: true
+    description: "Out-of-band RJ-45 1GbE management port 0"
+  - name: mgmt1 (rj-45)
+    type: 1000base-t
+    mgmt_only: true
+    description: "Out-of-band RJ-45 1GbE management port 1"
+module-bays:
+  - name: PS1
+    position: '1'
+    label: Power Supply 1
+  - name: PS2
+    position: '2'
+    label: Power Supply 2
+  - name: Fan 1
+    position: '1'
+    label: Fan Module 1
+  - name: Fan 2
+    position: '2'
+    label: Fan Module 2
+  - name: Fan 3
+    position: '3'
+    label: Fan Module 3
+  - name: Fan 4
+    position: '4'
+    label: Fan Module 4

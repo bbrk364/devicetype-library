@@ -21,7 +21,8 @@ custom_fields:
   last_day_of_support_date: null
 comments: |
   **NVIDIA DGX B300 (`DGX-B300`) System Specifications & Supported FRU / Configuration Options:**
-  - **Architecture & Compute Complex:**
+  
+    - **Architecture & Compute Complex:**
     - **GPUs:** 8x NVIDIA Blackwell Ultra B300 SXM GPUs (288 GB HBM3e per GPU; 2,304 GB / 2.3 TB total HBM3e; 64 TB/s aggregate memory bandwidth)
     - **NVLink Fabric:** 5th-Gen NVLink + NVSwitch (1.8 TB/s bidirectional bandwidth per GPU; 14.4 TB/s total bisectional bandwidth)
     - **Host CPUs:** Dual Intel Xeon Platinum 8592+ (64-core) or Xeon 6 series processors
@@ -43,6 +44,7 @@ comments: |
     - 800G OSFP XDR InfiniBand / 800GbE DAC, ACC, and Multimode/Single-Mode optical transceivers (for ConnectX-8 rails)
     - 400G / 200G QSFP112 NDR / Ethernet optical transceivers & DACs (for BlueField-3 storage ports)
   - **Out-of-Band Management & Console Interfaces:** `bmc` (1000base-t RJ-45 BMC/IPMI/Redfish), `mgmt0` (10gbase-t RJ-45 host management), `console` (RJ-45 RS-232), and `usb0` (USB 3.0 Type-A).
+
 console-ports:
   - name: console
     type: rj-45

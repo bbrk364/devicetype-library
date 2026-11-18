@@ -21,6 +21,7 @@ custom_fields:
   last_day_of_support_date: null
 comments: |
   **NVIDIA Quantum-X800 (`Q3400-RA`) Specifications & Supported FRU Options:**
+  
   - **Platform Architecture:** 4U Managed XDR InfiniBand Switch powered by 4x NVIDIA Quantum-X800 Switch ASICs (115.2 Tb/s aggregate switching capacity; 144x 800Gb/s XDR ports via 72x twin-port OSFP-RHS cages).
   - **Airflow & Model Variants:**
     - `Q3400-RA`: Connector-to-System / Rear-to-Front airflow (PSU/fan side to OSFP port side — matches NetBox `rear-to-front`)
