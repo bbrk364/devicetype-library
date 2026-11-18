@@ -1,0 +1,135 @@
+---
+manufacturer: Nvidia
+model: DGX B300
+part_number: DGX-B300
+slug: nvidia-dgx-b300
+subdevice_role: parent
+description: 'DGX-B300, NVIDIA DGX B300 AI System (10U, 8x Blackwell Ultra B300 GPUs, 2.3TB HBM3e, 8x ConnectX-8 800G SuperNICs, 2x BlueField-3 DPUs)'
+u_height: 10
+is_full_depth: true
+front_image: false
+rear_image: false
+weight: 290.0
+weight_unit: lb
+airflow: front-to-rear
+custom_fields:
+  device_height_in: 17.48
+  device_width_in: 19.00
+  device_depth_in: 35.30
+  eol_status: "Active"
+  end_of_sale_date: null
+  last_day_of_support_date: null
+comments: |
+  **NVIDIA DGX B300 (`DGX-B300`) System Specifications & Supported FRU / Configuration Options:**
+  - **Architecture & Compute Complex:**
+    - **GPUs:** 8x NVIDIA Blackwell Ultra B300 SXM GPUs (288 GB HBM3e per GPU; 2,304 GB / 2.3 TB total HBM3e; 64 TB/s aggregate memory bandwidth)
+    - **NVLink Fabric:** 5th-Gen NVLink + NVSwitch (1.8 TB/s bidirectional bandwidth per GPU; 14.4 TB/s total bisectional bandwidth)
+    - **Host CPUs:** Dual Intel Xeon Platinum 8592+ (64-core) or Xeon 6 series processors
+    - **System Memory:** 2 TB – 4 TB DDR5 ECC memory options
+  - **Physical Dimensions & Weight (10RU Air-Cooled Chassis):**
+    - **Dimensions (H x W x D):** 17.48 x 19.00 x 35.30 in (444.0 x 482.6 x 896.6 mm, 10U)
+    - **Chassis Weight:** ~290.0 lb (131.5 kg) fully populated
+    - **Airflow:** Front-to-Rear (`front-to-rear`), high-static-pressure hot-swappable fan modules
+  - **Supported Power Supply Options (N+N / N+1 Redundant Hot-Swappable):**
+    - 6x 3000W / 3300W Titanium-rated AC (200–277V) hot-swappable power supplies (14.5 kW max system power envelope; supports dual-zone 3+3 A/B feed redundancy)
+    - Optional High-Voltage DC (HVDC) PSU configuration for data center DC bus bars
+  - **Storage Subsystem Options (Front Hot-Swap NVMe Bays):**
+    - **OS Boot Drives:** 2x 1.92 TB or 3.84 TB M.2 / E1.S NVMe SSDs (RAID 1)
+    - **Internal Cache / Scratch Storage:** 8x 3.84 TB or 7.68 TB U.3 / E1.S PCIe Gen5 NVMe SSDs (30.72 TB or 61.44 TB raw cache)
+  - **High-Speed Compute & Storage Fabric Options:**
+    - **Compute Fabric (8x Dedicated Rails):** 8x NVIDIA ConnectX-8 SuperNICs (8x OSFP ports, 800Gb/s XDR InfiniBand or 800GbE RoCEv2, 1:1 GPU-to-NIC topology)
+    - **Storage & East-West Fabric:** 2x NVIDIA BlueField-3 DPUs (up to 4x QSFP112 ports, dual-port 200GbE / NDR200 or single-port 400GbE / NDR per DPU)
+  - **Supported Transceiver & Cable Options (NVIDIA LinkX):**
+    - 800G OSFP XDR InfiniBand / 800GbE DAC, ACC, and Multimode/Single-Mode optical transceivers (for ConnectX-8 rails)
+    - 400G / 200G QSFP112 NDR / Ethernet optical transceivers & DACs (for BlueField-3 storage ports)
+  - **Out-of-Band Management & Console Interfaces:** `bmc` (1000base-t RJ-45 BMC/IPMI/Redfish), `mgmt0` (10gbase-t RJ-45 host management), `console` (RJ-45 RS-232), and `usb0` (USB 3.0 Type-A).
+console-ports:
+  - name: console
+    type: rj-45
+  - name: usb0
+    type: usb-a
+interfaces:
+  - name: ib0
+    type: 800gbase-x-osfp
+    description: GPU0 Dedicated ConnectX-8 SuperNIC 800Gb/s XDR InfiniBand / 800GbE Compute Rail 0
+  - name: ib1
+    type: 800gbase-x-osfp
+    description: GPU1 Dedicated ConnectX-8 SuperNIC 800Gb/s XDR InfiniBand / 800GbE Compute Rail 1
+  - name: ib2
+    type: 800gbase-x-osfp
+    description: GPU2 Dedicated ConnectX-8 SuperNIC 800Gb/s XDR InfiniBand / 800GbE Compute Rail 2
+  - name: ib3
+    type: 800gbase-x-osfp
+    description: GPU3 Dedicated ConnectX-8 SuperNIC 800Gb/s XDR InfiniBand / 800GbE Compute Rail 3
+  - name: ib4
+    type: 800gbase-x-osfp
+    description: GPU4 Dedicated ConnectX-8 SuperNIC 800Gb/s XDR InfiniBand / 800GbE Compute Rail 4
+  - name: ib5
+    type: 800gbase-x-osfp
+    description: GPU5 Dedicated ConnectX-8 SuperNIC 800Gb/s XDR InfiniBand / 800GbE Compute Rail 5
+  - name: ib6
+    type: 800gbase-x-osfp
+    description: GPU6 Dedicated ConnectX-8 SuperNIC 800Gb/s XDR InfiniBand / 800GbE Compute Rail 6
+  - name: ib7
+    type: 800gbase-x-osfp
+    description: GPU7 Dedicated ConnectX-8 SuperNIC 800Gb/s XDR InfiniBand / 800GbE Compute Rail 7
+  - name: storage0
+    type: 400gbase-x-qsfp112
+    description: BlueField-3 DPU 0 Port 0 (400GbE / NDR Storage Fabric)
+  - name: storage1
+    type: 400gbase-x-qsfp112
+    description: BlueField-3 DPU 0 Port 1 (400GbE / NDR Storage Fabric)
+  - name: storage2
+    type: 400gbase-x-qsfp112
+    description: BlueField-3 DPU 1 Port 0 (400GbE / NDR Storage Fabric)
+  - name: storage3
+    type: 400gbase-x-qsfp112
+    description: BlueField-3 DPU 1 Port 1 (400GbE / NDR Storage Fabric)
+  - name: mgmt0
+    type: 10gbase-t
+    mgmt_only: true
+    description: "Host 10GbE RJ-45 out-of-band management interface"
+  - name: bmc
+    type: 1000base-t
+    mgmt_only: true
+    description: "Dedicated BMC / IPMI / Redfish 1GbE RJ-45 management interface"
+module-bays:
+  - name: HGX B300 Baseboard
+    position: '1'
+    label: 8-GPU Blackwell Ultra B300 SXM Baseboard
+  - name: PS1
+    position: '1'
+    label: Power Supply 1
+  - name: PS2
+    position: '2'
+    label: Power Supply 2
+  - name: PS3
+    position: '3'
+    label: Power Supply 3
+  - name: PS4
+    position: '4'
+    label: Power Supply 4
+  - name: PS5
+    position: '5'
+    label: Power Supply 5
+  - name: PS6
+    position: '6'
+    label: Power Supply 6
+  - name: Fan 1
+    position: '1'
+    label: Fan Module 1
+  - name: Fan 2
+    position: '2'
+    label: Fan Module 2
+  - name: Fan 3
+    position: '3'
+    label: Fan Module 3
+  - name: Fan 4
+    position: '4'
+    label: Fan Module 4
+  - name: Fan 5
+    position: '5'
+    label: Fan Module 5
+  - name: Fan 6
+    position: '6'
+    label: Fan Module 6
