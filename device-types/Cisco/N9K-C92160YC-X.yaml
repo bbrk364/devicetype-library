@@ -3,11 +3,38 @@ manufacturer: Cisco
 model: Nexus 92160YC-X
 part_number: N9K-C92160YC-X
 slug: cisco-n9k-c92160yc-x
-weight: 6.4
-weight_unit: kg
+subdevice_role: parent
+description: 'N9K-C92160YC-X, Cisco Nexus 92160YC-X Switch, 48x 10/25G SFP+ & 6x 40/100G QSFP28 only (4 are 100-Gbps capable)'
 u_height: 1
 is_full_depth: true
 front_image: true
+weight: 16.5
+weight_unit: lb
+custom_fields:
+  device_height_in: 1.72
+  device_width_in: 17.30
+  device_depth_in: 22.50
+  eol_status: "End-of-Support"
+  end_of_sale_date: null
+  last_day_of_support_date: null  
+comments: |
+  **Cisco Nexus 92160YC-X Specifications & Supported Power Supply FRUs:**
+  - **Datasheet Reference:** [Cisco Nexus 9200 Platform Switches Datasheet](https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-736166.html)
+  - **Physical Dimensions (H x W x D):** 1.72 x 17.30 x 22.50 in (4.4 x 43.9 x 57.1 cm)
+  - **Chassis Weight:** 16.5 lb (7.5 kg) base chassis
+  - **Supported Power Supply Options (1+1 Redundant):**
+    - `NXA-PAC-650W-PE`: 650W AC power supply with port-side exhaust airflow (Blue release latch)
+    - `NXA-PAC-650W-PI`: 650W AC power supply with port-side intake airflow (Burgundy release latch)
+    - `N9K-PUV-1200W`: 1200W HVAC/HVDC dual-direction power supply (White release latch)
+    - `UCS-PSU-6332-DC`: 930W DC power supply with port-side exhaust airflow (Gray release latch)
+    - `UCSC-PSU-930WDC`: 930W DC power supply with port-side intake airflow (Green release latch)
+    - `NXA-PDC-930W-PE`: 930W DC power supply with port-side exhaust airflow (Blue release latch)
+    - `NXA-PDC-930W-PI`: 930W DC power supply with port-side intake airflow (Burgundy release latch)
+  - **Supported Fan Module Options (4 Trays Required):**
+    - `NXA-FAN-30CFM-PI`: Port-side intake fan module (Burgundy coloring)
+    - `NXA-FAN-30CFM-PE`: Port-side exhaust fan module (Blue coloring)
+  - **Port Layout:** 48x 10/25G SFP28 fixed downlinks, 4x 40/100G QSFP28 + 2x 40G QSFP+ fixed uplinks.
+  - **Management Interfaces:** `mgmt0` (1000base-t RJ-45) and `mgmt1` (1000base-x SFP).
 console-ports:
   - name: console
     type: rj-45
@@ -124,24 +151,37 @@ interfaces:
     description: 100G / 40G capable
   - name: Ethernet1/53
     type: 40gbase-x-qsfpp
+    description: 40G capable
   - name: Ethernet1/54
     type: 40gbase-x-qsfpp
+    description: 40G capable
   - name: mgmt0
     type: 1000base-t
     mgmt_only: true
-    description: 1G SFP and RJ-45 comboport
+    description: "Copper RJ-45 out-of-band management port"
+  - name: mgmt1
+    type: 1000base-x-sfp
+    mgmt_only: true
+    description: "Fiber SFP out-of-band management port"
 module-bays:
   - name: PS1
     position: '1'
     label: Power Supply 1
+    description: "Supports NXA-PAC-650W-PE/PI, N9K-PUV-1200W, UCS-PSU-6332-DC, UCSC-PSU-930WDC, NXA-PDC-930W-PE/PI"
   - name: PS2
     position: '2'
     label: Power Supply 2
+    description: "Supports NXA-PAC-650W-PE/PI, N9K-PUV-1200W, UCS-PSU-6332-DC, UCSC-PSU-930WDC, NXA-PDC-930W-PE/PI"
   - name: Fan 1
     position: '1'
+    label: Fan Module 1 (NXA-FAN-30CFM-PI/PE)
   - name: Fan 2
     position: '2'
+    label: Fan Module 2 (NXA-FAN-30CFM-PI/PE)
   - name: Fan 3
     position: '3'
+    label: Fan Module 3 (NXA-FAN-30CFM-PI/PE)
   - name: Fan 4
     position: '4'
+    label: Fan Module 4 (NXA-FAN-30CFM-PI/PE)
+  

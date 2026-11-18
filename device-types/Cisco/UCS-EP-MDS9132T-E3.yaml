@@ -1,0 +1,131 @@
+---
+manufacturer: Cisco
+model: MDS 9132TE3
+part_number: UCS-EP-MDS9132T-E3
+slug: cisco-ucs-ep-mds9132t-e3
+subdevice_role: parent
+description: 'UCS-EP-MDS9132T-E3, Cisco MDS 9132T 32-Gbps Fibre Channel Switch (UCS / FlexPod Bundle), Port-Side Exhaust, Enterprise Package'
+u_height: 1
+is_full_depth: true
+front_image: false
+rear_image: false
+weight: 18.85
+weight_unit: lb
+airflow: front-to-rear
+custom_fields:
+  device_height_in: 1.72
+  device_width_in: 17.30
+  device_depth_in: 22.30
+  eol_status: "Active"
+  end_of_sale_date: null
+  last_day_of_support_date: null
+comments: |
+  **Cisco MDS 9132T (`UCS-EP-MDS9132T-E3`) Specifications & Supported FRU Options:**
+  - **Datasheet Reference:** [Cisco MDS 9132T 32-Gbps 32-Port Fibre Channel Switch Datasheet](https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-switches/datasheet-c78-739613.html)
+  - **Bundle Configuration:** Cisco UCS / FlexPod Solution Pack (`UCS-EP-MDS9132T-E3`), 16 fixed 32G FC ports (`fc1/1`–`fc1/16`) + 1x Expansion Module Slot (`fc1/17`–`fc1/32`), Port-Side Exhaust airflow (`-E`, front-to-rear), Enterprise Package license included. Base chassis SKU: `DS-C9132T-K9`.
+  - **Physical Dimensions (H x W x D):** 1.72 x 17.30 x 22.30 in (4.37 x 43.94 x 56.64 cm)
+  - **Chassis Weight:** 18.85 lb (8.55 kg) fully configured with 2x PSUs, 4x fans, and expansion module
+  - **Supported Expansion Module (Front Right Slot — Ports `fc1/17`–`fc1/32`):**
+    - `DS-X9334-K9`: 16-port 32-Gbps Fibre Channel Expansion Module (hot-swappable)
+  - **Supported Power Supply Options (1+1 Redundant):**
+    - `DS-CAC-650W-E`: 650W AC power supply with port-side exhaust airflow (Blue release latch — standard for `-E` bundle)
+    - `DS-CAC-650W-I`: 650W AC power supply with port-side intake airflow (Burgundy release latch)
+    - `DS-CDC-930W-E`: 930W DC power supply with port-side exhaust airflow (Blue release latch)
+    - `DS-CDC-930W-I`: 930W DC power supply with port-side intake airflow (Burgundy release latch)
+    - `DS-CHV-1200W`: 1200W HVAC/HVDC dual-direction power supply (White release latch)
+  - **Supported Fan Module Options (4 Trays Required — Must Match PSU Airflow):**
+    - `DS-C48V-FAN-E` / `DS-C32T-FAN-E`: Port-side exhaust fan module (Blue coloring — standard for `-E` bundle)
+    - `DS-C48V-FAN-I` / `DS-C32T-FAN-I`: Port-side intake fan module (Burgundy coloring)
+  - **Supported Transceiver & Optical Options:**
+    - 32G FC SW/LW SFP+ (`DS-SFP-FC32G-SW`, `DS-SFP-FC32G-LW`)
+    - 16G FC SW/LW SFP+ (`DS-SFP-FC16G-SW`, `DS-SFP-FC16G-LW`)
+    - 8G FC SW/LW SFP+ (`DS-SFP-FC8G-SW`, `DS-SFP-FC8G-LW` — supported in 32G optics backward-compatibility mode)
+  - **Port Upgrade & Software License Options:**
+    - `M9132T-PL8-K9` / `L-M9132T-PL8-K9`: 8-Port On-Demand Activation License (for `DS-X9334-K9` expansion module)
+    - `M9132T-ENT-K9` / `L-M9132T-ENT-K9`: Cisco MDS 9132T Enterprise Package License
+  - **Accessory & Rack-Mount Kit Options:**
+    - `DS-C32T-RK-KIT`: Standard 4-post rack-mount kit
+  - **Management & Console Interfaces:** `mgmt0` (1000base-t RJ-45), `console` (RJ-45 RS-232), and `usb1` (USB 2.0 Type-A).
+console-ports:
+  - name: console
+    type: rj-45
+  - name: usb1
+    type: usb-a
+interfaces:
+  - name: fc1/1
+    type: 32gfc-sfpp
+    description: 32G / 16G / 8G Fibre Channel SFP+ (Fixed Base Port)
+  - name: fc1/2
+    type: 32gfc-sfpp
+    description: 32G / 16G / 8G Fibre Channel SFP+ (Fixed Base Port)
+  - name: fc1/3
+    type: 32gfc-sfpp
+    description: 32G / 16G / 8G Fibre Channel SFP+ (Fixed Base Port)
+  - name: fc1/4
+    type: 32gfc-sfpp
+    description: 32G / 16G / 8G Fibre Channel SFP+ (Fixed Base Port)
+  - name: fc1/5
+    type: 32gfc-sfpp
+    description: 32G / 16G / 8G Fibre Channel SFP+ (Fixed Base Port)
+  - name: fc1/6
+    type: 32gfc-sfpp
+    description: 32G / 16G / 8G Fibre Channel SFP+ (Fixed Base Port)
+  - name: fc1/7
+    type: 32gfc-sfpp
+    description: 32G / 16G / 8G Fibre Channel SFP+ (Fixed Base Port)
+  - name: fc1/8
+    type: 32gfc-sfpp
+    description: 32G / 16G / 8G Fibre Channel SFP+ (Fixed Base Port)
+  - name: fc1/9
+    type: 32gfc-sfpp
+    description: 32G / 16G / 8G Fibre Channel SFP+ (Fixed Base Port)
+  - name: fc1/10
+    type: 32gfc-sfpp
+    description: 32G / 16G / 8G Fibre Channel SFP+ (Fixed Base Port)
+  - name: fc1/11
+    type: 32gfc-sfpp
+    description: 32G / 16G / 8G Fibre Channel SFP+ (Fixed Base Port)
+  - name: fc1/12
+    type: 32gfc-sfpp
+    description: 32G / 16G / 8G Fibre Channel SFP+ (Fixed Base Port)
+  - name: fc1/13
+    type: 32gfc-sfpp
+    description: 32G / 16G / 8G Fibre Channel SFP+ (Fixed Base Port)
+  - name: fc1/14
+    type: 32gfc-sfpp
+    description: 32G / 16G / 8G Fibre Channel SFP+ (Fixed Base Port)
+  - name: fc1/15
+    type: 32gfc-sfpp
+    description: 32G / 16G / 8G Fibre Channel SFP+ (Fixed Base Port)
+  - name: fc1/16
+    type: 32gfc-sfpp
+    description: 32G / 16G / 8G Fibre Channel SFP+ (Fixed Base Port)
+  - name: mgmt0
+    type: 1000base-t
+    mgmt_only: true
+    description: "Copper RJ-45 out-of-band management port"
+module-bays:
+  - name: Slot 2
+    position: '2'
+    label: 16-Port 32G FC Expansion Module Slot (DS-X9334-K9)
+    description: "Supports DS-X9334-K9 (adds interfaces fc1/17 through fc1/32)"
+  - name: PS1
+    position: '1'
+    label: Power Supply 1
+    description: "Supports DS-CAC-650W-E/I, DS-CDC-930W-E/I, DS-CHV-1200W"
+  - name: PS2
+    position: '2'
+    label: Power Supply 2
+    description: "Supports DS-CAC-650W-E/I, DS-CDC-930W-E/I, DS-CHV-1200W"
+  - name: Fan 1
+    position: '1'
+    label: Fan Module 1 (DS-C32T-FAN-E/I)
+  - name: Fan 2
+    position: '2'
+    label: Fan Module 2 (DS-C32T-FAN-E/I)
+  - name: Fan 3
+    position: '3'
+    label: Fan Module 3 (DS-C32T-FAN-E/I)
+  - name: Fan 4
+    position: '4'
+    label: Fan Module 4 (DS-C32T-FAN-E/I)

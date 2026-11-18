@@ -1,0 +1,149 @@
+---
+manufacturer: Cisco
+model: MDS 9124V 24PIVK9
+part_number: DS-C9124V-24PIVK9
+slug: cisco-ds-c9124v-24pivk9
+subdevice_role: parent
+description: 'DS-C9124V-24PIVK9, Cisco MDS 9124V 24-Port 64G Fibre Channel Switch, Port-Side Intake'
+u_height: 1
+is_full_depth: true
+front_image: false
+rear_image: false
+weight: 16.53
+weight_unit: lb
+airflow: rear-to-front
+custom_fields:
+  device_height_in: 1.72
+  device_width_in: 17.30
+  device_depth_in: 22.30
+  eol_status: "Active"
+  end_of_sale_date: null
+  last_day_of_support_date: null
+comments: |
+  **Cisco MDS 9124V (`DS-C9124V-24PIVK9`) Specifications & Supported FRU Options:**
+  - **Datasheet Reference:** [Cisco MDS 9124V 64-Gbps 24-Port Fibre Channel Switch Datasheet](https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-switches/mds-9124v-64g-24p-fc-switch-ds.html)
+  - **Bundle Configuration:** 24x 64G FC active ports (`fc1/1`–`fc1/24`), Port-Side Intake airflow (`-I`, rear-to-front), standard NX-OS license. Base chassis SKU: `DS-C9124V-K9`.
+  - **Physical Dimensions (H x W x D):** 1.72 x 17.30 x 22.30 in (4.37 x 43.94 x 56.64 cm)
+  - **Chassis Weight:** 16.53 lb (7.5 kg) fully configured
+  - **Supported Power Supply Options (1+1 Redundant):**
+    - `DS-CAC-650W-I`: 650W AC power supply with port-side intake airflow (Burgundy release latch — standard for `-I` bundle)
+    - `DS-CAC-650W-E`: 650W AC power supply with port-side exhaust airflow (Blue release latch)
+    - `DS-CDC-930W-I`: 930W DC power supply with port-side intake airflow (Burgundy release latch)
+    - `DS-CDC-930W-E`: 930W DC power supply with port-side exhaust airflow (Blue release latch)
+    - `DS-CHV-1200W`: 1200W HVAC/HVDC dual-direction power supply (White release latch)
+  - **Supported Fan Module Options (4 Trays Required — Must Match PSU Airflow):**
+    - `DS-C48V-FAN-I`: Port-side intake fan module (Burgundy coloring — standard for `-I` bundle)
+    - `DS-C48V-FAN-E`: Port-side exhaust fan module (Blue coloring)
+  - **Supported Transceiver & Optical Options:**
+    - 64G FC SW/LW SFP+ (`DS-SFP-FC64G-SW`, `DS-SFP-FC64G-LW`)
+    - 32G FC SW/LW SFP+ (`DS-SFP-FC32G-SW`, `DS-SFP-FC32G-LW`)
+    - 16G FC SW/LW SFP+ (`DS-SFP-FC16G-SW`, `DS-SFP-FC16G-LW`)
+    - 8G FC SW/LW SFP+ (`DS-SFP-FC8G-SW`, `DS-SFP-FC8G-LW` — supported in 32G optics backward-compatibility mode)
+  - **Software License & Upgrade Options:**
+    - `M9124V-ENT-K9` / `L-M9124V-ENT-K9`: Cisco MDS 9124V Enterprise Package License (Smart Licensing / PAK)
+  - **Accessory & Rack-Mount Kit Options:**
+    - `DS-C24V-RK-KIT`: Standard 4-post rack-mount kit
+  - **Management & Console Interfaces:** `mgmt0` (1000base-t RJ-45), `console` (RJ-45 RS-232), and `usb1` (USB 2.0 Type-A).
+console-ports:
+  - name: console
+    type: rj-45
+  - name: usb1
+    type: usb-a
+interfaces:
+  - name: fc1/1
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/2
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/3
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/4
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/5
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/6
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/7
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/8
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/9
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/10
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/11
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/12
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/13
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/14
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/15
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/16
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/17
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/18
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/19
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/20
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/21
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/22
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/23
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: fc1/24
+    type: 64gfc-sfpp
+    description: 64G / 32G / 16G / 8G Fibre Channel SFP+
+  - name: mgmt0
+    type: 1000base-t
+    mgmt_only: true
+    description: "Copper RJ-45 out-of-band management port"
+module-bays:
+  - name: PS1
+    position: '1'
+    label: Power Supply 1
+    description: "Supports DS-CAC-650W-I/E, DS-CDC-930W-I/E, DS-CHV-1200W"
+  - name: PS2
+    position: '2'
+    label: Power Supply 2
+    description: "Supports DS-CAC-650W-I/E, DS-CDC-930W-I/E, DS-CHV-1200W"
+  - name: Fan 1
+    position: '1'
+    label: Fan Module 1 (DS-C48V-FAN-I/E)
+  - name: Fan 2
+    position: '2'
+    label: Fan Module 2 (DS-C48V-FAN-I/E)
+  - name: Fan 3
+    position: '3'
+    label: Fan Module 3 (DS-C48V-FAN-I/E)
+  - name: Fan 4
+    position: '4'
+    label: Fan Module 4 (DS-C48V-FAN-I/E)
