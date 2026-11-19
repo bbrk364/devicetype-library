@@ -1,0 +1,179 @@
+---
+manufacturer: Nvidia
+model: Quantum-2 MQM9790-NS2F
+part_number: MQM9790-NS2F
+slug: nvidia-quantum-2-mqm9790-ns2f
+subdevice_role: parent
+description: 'MQM9790-NS2F, NVIDIA Quantum-2 64-Port 400Gb/s NDR InfiniBand Switch, 1U, 32x Twin-Port OSFP, Power-to-Connector (P2C) Airflow'
+u_height: 1
+is_full_depth: true
+front_image: false
+rear_image: false
+weight: 26.20
+weight_unit: lb
+airflow: rear-to-front
+custom_fields:
+  device_height_in: 1.72
+  device_width_in: 17.24
+  device_depth_in: 22.05
+  eol_status: "Active"
+  end_of_sale_date: null
+  last_day_of_support_date: null
+comments: |
+  **NVIDIA Quantum-2 (`MQM9790-NS2F`) Specifications & Supported FRU / Configuration Options:**
+  
+  - **Platform Architecture:** 1U NDR InfiniBand Switch powered by NVIDIA Quantum-2 ASIC (25.6 Tb/s aggregate switching capacity; 64x 400Gb/s NDR ports via 32x twin-port OSFP cages).
+  - **NVIDIA Quantum-2 QM9700 / QM9790 Model & Airflow Options:**
+    - `MQM9790-NS2F` (This Template): 1U, Externally Managed, Power-to-Connector (`P2C` / Rear-to-Front, `rear-to-front`) airflow, Standard Depth (560 mm)
+    - `MQM9790-NS2R`: 1U, Externally Managed, Connector-to-Power (`C2P` / Front-to-Rear, `front-to-rear`) airflow, Standard Depth (560 mm)
+    - `MQM9700-NS2F` / `MQM9700-NS2R`: 1U, Internally Managed (onboard x86 control-plane CPU + dual 1GbE RJ-45 `mgmt0`/`mgmt1` + RS-232 console + USB), `P2C` (`-F`) or `C2P` (`-R`) airflow
+  - **Physical Dimensions (H x W x D):** 1.72 x 17.24 x 22.05 in (43.8 x 438.0 x 560.0 mm, 1RU)
+  - **Chassis Weight:** 26.20 lb (11.88 kg) fully populated with 2x PSUs and 4x fan modules
+  - **Supported Power Supply Options (1+1 Redundant Hot-Swappable):**
+    - `MTEF-PSF-AC-G` / `930-9NR00-00FA-000`: 1100W / 1500W AC (100–240 VAC, 50/60 Hz, IEC C14) Platinum-rated hot-swappable PSU (`P2C` / Rear-to-Front airflow — standard for `-NS2F`)
+    - `MTEF-PSR-AC-G`: 1100W / 1500W AC hot-swappable PSU (`C2P` / Front-to-Rear airflow — for `-NS2R`)
+    - High-Voltage DC (HVDC) / -48V DC redundant power supply options
+    - Typical Power Draw: ~305W (with passive DAC cables, ATIS) / ~747W (with 32x active optical transceivers)
+  - **Supported Fan Module Options (4x Hot-Swappable N+1 Redundant Trays):**
+    - `MTEF-FANF-A` / `930-9NR00-00FF-000`: Counter-rotating hot-swappable fan module (`P2C` / Rear-to-Front airflow — standard for `-NS2F`)
+    - `MTEF-FANR-A`: Counter-rotating hot-swappable fan module (`C2P` / Front-to-Rear airflow — for `-NS2R`)
+  - **Accessory & Rack-Mount Kit Options:**
+    - `MTEF-KIT-D` / `930-9NR00-00FR-000`: Standard 19-inch 4-post toolless rack-mount rail kit
+  - **Port & Breakout Configuration Options (32x Twin-Port OSFP Cages):**
+    - **Native NDR Mode:** 64x 400Gb/s InfiniBand ports (2x 400Gb/s per twin-port OSFP cage)
+    - **Breakout Mode:** Up to 128x 200Gb/s NDR200 / HDR ports (using 2:1 passive DAC, ACC, or multimode/single-mode optical splitters)
+  - **Supported NVIDIA LinkX Transceiver & Cable Options (400G NDR):**
+    - 800G/2x400G Twin-Port OSFP Multimode Optical Transceivers (`MMS4X00-NS400`, MPO-12 APC) & Single-Mode DR4/FR4 Transceivers (`MMS4X00-NM`)
+    - 400G / 800G OSFP Passive DACs (`MCP4Y10-Nxxx`) & Active Copper Cables (`MCA4J80-Nxxx`)
+  - **Management & Console Interfaces:** 2x `mgmt0`/`mgmt1` (1000base-t RJ-45 out-of-band management), 1x `console` (RJ-45 RS-232), and 1x `usb0` (USB Type-A).
+console-ports:
+  - name: console
+    type: rj-45
+  - name: usb0
+    type: usb-a
+interfaces:
+  - name: swp1
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 1
+  - name: swp2
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 2
+  - name: swp3
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 3
+  - name: swp4
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 4
+  - name: swp5
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 5
+  - name: swp6
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 6
+  - name: swp7
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 7
+  - name: swp8
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 8
+  - name: swp9
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 9
+  - name: swp10
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 10
+  - name: swp11
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 11
+  - name: swp12
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 12
+  - name: swp13
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 13
+  - name: swp14
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 14
+  - name: swp15
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 15
+  - name: swp16
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 16
+  - name: swp17
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 17
+  - name: swp18
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 18
+  - name: swp19
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 19
+  - name: swp20
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 20
+  - name: swp21
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 21
+  - name: swp22
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 22
+  - name: swp23
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 23
+  - name: swp24
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 24
+  - name: swp25
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 25
+  - name: swp26
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 26
+  - name: swp27
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 27
+  - name: swp28
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 28
+  - name: swp29
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 29
+  - name: swp30
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 30
+  - name: swp31
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 31
+  - name: swp32
+    type: 800gbase-x-osfp
+    description: 2x 400Gb/s NDR InfiniBand Twin-Port OSFP Cage 32
+  - name: mgmt0
+    type: 1000base-t
+    mgmt_only: true
+    description: "Out-of-band RJ-45 1GbE management port 0"
+  - name: mgmt1
+    type: 1000base-t
+    mgmt_only: true
+    description: "Out-of-band RJ-45 1GbE management port 1"
+module-bays:
+  - name: PS1
+    position: '1'
+    label: Power Supply 1
+    description: "Supports MTEF-PSF-AC-G (P2C Rear-to-Front)"
+  - name: PS2
+    position: '2'
+    label: Power Supply 2
+    description: "Supports MTEF-PSF-AC-G (P2C Rear-to-Front)"
+  - name: Fan 1
+    position: '1'
+    label: Fan Module 1 (MTEF-FANF-A)
+  - name: Fan 2
+    position: '2'
+    label: Fan Module 2 (MTEF-FANF-A)
+  - name: Fan 3
+    position: '3'
+    label: Fan Module 3 (MTEF-FANF-A)
+  - name: Fan 4
+    position: '4'
+    label: Fan Module 4 (MTEF-FANF-A)

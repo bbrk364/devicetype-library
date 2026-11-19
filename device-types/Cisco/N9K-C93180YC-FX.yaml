@@ -17,6 +17,7 @@ custom_fields:
   device_depth_in: 22.50
 comments: |
   **Cisco Nexus N9K-C93180YC-FX Hardware Notes**
+  
   - **Ports:** 48x 10/25-Gbps fiber ports and 6x 40/100-Gbps QSFP28 ports
   - **Capabilities:** Supports MACsec encryption on all ports; Downlink ports are capable of supporting 1/10/25-Gbps Ethernet or 16/32-Gbps Fibre Channel (FC).
   - **Airflow:** Port-side intake (burgundy fan modules) or Port-side exhaust (blue fan modules)

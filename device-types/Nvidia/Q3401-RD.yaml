@@ -21,6 +21,7 @@ custom_fields:
   last_day_of_support_date: null
 comments: |
   **NVIDIA Quantum-X800 (`Q3401-RD`) Specifications & Supported FRU Options:**
+  
   - **Platform Architecture:** 4U Direct-to-Chip (DLC) Liquid-Cooled Managed XDR InfiniBand Switch powered by 4x NVIDIA Quantum-X800 Switch ASICs (115.2 Tb/s aggregate switching capacity; 144x 800Gb/s XDR ports via 72x twin-port OSFP-RHS cages).
   - **Cooling & Model Variants:**
     - `Q3401-RD`: Direct-to-Chip (DLC) Liquid-Cooled switch with Connector-to-System / Rear-to-Front (`-R`) residual airflow (cold-plate loop cools the 4x Quantum-X800 ASICs; rear fans cool optics/PSUs)

@@ -16,6 +16,7 @@ custom_fields:
   device_depth_in: 24.50
 comments: |
   **Cisco N9K-C9336C-FX2-B2 Commercial Bundle Notes:**
+  
   - **Bundle Contents:** 2x Nexus 9336C-FX2 1-RU Switches + 8x 100G QSFP28 bundled optical transceivers.
   - **Datasheet Reference:** [Cisco Nexus 9336C-FX2 Hardware Installation Guide](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/hw/n9336cfx2_hig/guide/b_n9336cFX2_nxos_hardware_installation_guide/b_n9336cFX2_nxos_hardware_installation_guide_appendix_0111.html)
   - **Physical Dimensions (per chassis):** 1.72 x 17.30 x 24.50 in (4.4 x 43.9 x 62.3 cm with handles)

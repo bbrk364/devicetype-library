@@ -17,6 +17,7 @@ custom_fields:
   device_depth_in: 24.50
 comments: |
   **Cisco Nexus 9336C-FX2 Specifications & FRU Notes:**
+  
   - **Datasheet Reference:** [Cisco Nexus 9300 Datacenter FX2 Switches Datasheet](https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-742282.html)
   - **Physical Dimensions (H x W x D):** 1.72 x 17.30 x 24.50 in (4.4 x 43.9 x 62.3 cm)
   - **Rack-Mount Kit Options:**

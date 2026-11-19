@@ -1,0 +1,280 @@
+---
+manufacturer: Nvidia
+model: Spectrum-4 SN5400
+part_number: 920-9N42E-00RI-3C0
+slug: nvidia-spectrum-4-sn5400
+subdevice_role: parent
+description: 'SN5400 (920-9N42E-00RI-3C0), NVIDIA Spectrum-4 25.6Tb/s 400GbE Ethernet Switch, 1U, 64x 400GbE QSFP112 + 1x 25GbE SFP28, Connector-to-Power (C2P) Airflow'
+u_height: 1
+is_full_depth: true
+front_image: false
+rear_image: false
+weight: 33.07
+weight_unit: lb
+airflow: front-to-rear
+custom_fields:
+  device_height_in: 1.72
+  device_width_in: 17.24
+  device_depth_in: 28.00
+  eol_status: "Active"
+  end_of_sale_date: null
+  last_day_of_support_date: null
+comments: |
+  **NVIDIA Spectrum-4 SN5400 (`920-9N42E-00RI-3C0`) Specifications & Supported FRU / Configuration Options:**
+
+  - **Datasheet / Hardware Reference:** [NVIDIA Spectrum-4 SN5000 1U Switch Systems Specifications](https://networking-docs.nvidia.com/sn5000hw/specifications)
+  - **Platform Architecture:** 1U Open Ethernet Switch powered by NVIDIA Spectrum-4 ASIC (25.6 Tb/s aggregate switching capacity; 128 MB shared packet buffer; AMD EPYC 3251 8-core control-plane CPU with 32 GB DDR4 RAM & 80 GB NVMe SSD).
+  - **Airflow, OPN & NOS Software Options:**
+    - `920-9N42E-00RI-3C0` (This Template): Connector-to-Power (`C2P`) / Front-to-Rear airflow (`front-to-rear`), Cumulus Linux Secure Boot (`nvidia-cumulus-linux`)
+    - `920-9N42E-00FI-3C0`: Power-to-Connector (`P2C`) / Rear-to-Front airflow (`rear-to-front`), Cumulus Linux Secure Boot
+    - Also available with Enterprise SONiC / ONIE open-networking boot image options
+  - **Physical Dimensions (H x W x D):** 1.72 x 17.24 x 28.00 in (43.8 x 438.0 x 711.2 mm, 1RU)
+  - **Chassis Weight:** 33.07 lb (15.0 kg) fully populated with 2x PSUs and 6x fan modules
+  - **Supported Power Supply Options (1+1 Redundant Hot-Swappable):**
+    - 2x 1500W AC (100–240 VAC, 50/60 Hz, IEC C14/C15) Platinum/Titanium-rated hot-swappable PSUs (airflow-matched `C2P` or `P2C`)
+    - High-Voltage DC (HVDC 240V–380V) / -48V DC redundant power supply options
+    - Typical Power Draw: ~450W (with passive DAC cables, ATIS) / ~950W (with 64x active optical modules)
+  - **Supported Fan Module Options (6x Hot-Swappable N+1 Redundant Trays):**
+    - Counter-rotating high-static-pressure 1U hot-swappable fan modules (`C2P` Front-to-Rear or `P2C` Rear-to-Front airflow matched)
+  - **Port & Breakout Configuration Options:**
+    - **Ports 1–64 (`swp1`–`swp64`):** 64x QSFP112 cages (10/25/50/100/200/400GbE); supports breakout into 128x 200GbE or 256x 100GbE
+    - **Port 65 (`swp65`):** 1x SFP28 auxiliary/management uplink cage (1/10/25GbE)
+  - **Supported NVIDIA LinkX Transceiver & Cable Options:**
+    - 400G QSFP112 Single-Mode & Multimode Optical Transceivers (`MMA4Z00-NS400`, `MMS4X00` series)
+    - 400G QSFP112 Passive DACs, Active Copper Cables (ACC), and 1:2 / 1:4 QSFP112 Breakout Splitter Cables
+    - 25GbE SFP28 DAC / Optical Transceivers (`MCP2M00-A004E26L` for port `swp65`)
+  - **Management & Console Interfaces:** 2x `mgmt0`/`mgmt1` (1000base-t RJ-45 out-of-band management), 1x `console` (RJ-45 RS-232), and 1x `usb0` (USB-A).
+console-ports:
+  - name: console
+    type: rj-45
+  - name: usb0
+    type: usb-a
+interfaces:
+  - name: swp1
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 1
+  - name: swp2
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 2
+  - name: swp3
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 3
+  - name: swp4
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 4
+  - name: swp5
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 5
+  - name: swp6
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 6
+  - name: swp7
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 7
+  - name: swp8
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 8
+  - name: swp9
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 9
+  - name: swp10
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 10
+  - name: swp11
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 11
+  - name: swp12
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 12
+  - name: swp13
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 13
+  - name: swp14
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 14
+  - name: swp15
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 15
+  - name: swp16
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 16
+  - name: swp17
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 17
+  - name: swp18
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 18
+  - name: swp19
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 19
+  - name: swp20
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 20
+  - name: swp21
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 21
+  - name: swp22
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 22
+  - name: swp23
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 23
+  - name: swp24
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 24
+  - name: swp25
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 25
+  - name: swp26
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 26
+  - name: swp27
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 27
+  - name: swp28
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 28
+  - name: swp29
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 29
+  - name: swp30
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 30
+  - name: swp31
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 31
+  - name: swp32
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 32
+  - name: swp33
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 33
+  - name: swp34
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 34
+  - name: swp35
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 35
+  - name: swp36
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 36
+  - name: swp37
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 37
+  - name: swp38
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 38
+  - name: swp39
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 39
+  - name: swp40
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 40
+  - name: swp41
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 41
+  - name: swp42
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 42
+  - name: swp43
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 43
+  - name: swp44
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 44
+  - name: swp45
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 45
+  - name: swp46
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 46
+  - name: swp47
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 47
+  - name: swp48
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 48
+  - name: swp49
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 49
+  - name: swp50
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 50
+  - name: swp51
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 51
+  - name: swp52
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 52
+  - name: swp53
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 53
+  - name: swp54
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 54
+  - name: swp55
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 55
+  - name: swp56
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 56
+  - name: swp57
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 57
+  - name: swp58
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 58
+  - name: swp59
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 59
+  - name: swp60
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 60
+  - name: swp61
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 61
+  - name: swp62
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 62
+  - name: swp63
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 63
+  - name: swp64
+    type: 400gbase-x-qsfp112
+    description: 400GbE / 200GbE / 100GbE QSFP112 Port 64
+  - name: swp65
+    type: 25gbase-x-sfp28
+    description: 25GbE / 10GbE / 1GbE SFP28 Auxiliary / Management Uplink Port 65
+  - name: mgmt0
+    type: 1000base-t
+    mgmt_only: true
+    description: "Out-of-band RJ-45 1GbE management port 0"
+  - name: mgmt1
+    type: 1000base-t
+    mgmt_only: true
+    description: "Out-of-band RJ-45 1GbE management port 1"
+module-bays:
+  - name: PS1
+    position: '1'
+    label: Power Supply 1 (1500W AC)
+  - name: PS2
+    position: '2'
+    label: Power Supply 2 (1500W AC)
+  - name: Fan 1
+    position: '1'
+    label: Fan Module 1
+  - name: Fan 2
+    position: '2'
+    label: Fan Module 2
+  - name: Fan 3
+    position: '3'
+    label: Fan Module 3
+  - name: Fan 4
+    position: '4'
+    label: Fan Module 4
+  - name: Fan 5
+    position: '5'
+    label: Fan Module 5
+  - name: Fan 6
+    position: '6'
+    label: Fan Module 6

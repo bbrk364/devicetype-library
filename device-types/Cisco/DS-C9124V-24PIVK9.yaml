@@ -21,6 +21,7 @@ custom_fields:
   last_day_of_support_date: null
 comments: |
   **Cisco MDS 9124V (`DS-C9124V-24PIVK9`) Specifications & Supported FRU Options:**
+  
   - **Datasheet Reference:** [Cisco MDS 9124V 64-Gbps 24-Port Fibre Channel Switch Datasheet](https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-switches/mds-9124v-64g-24p-fc-switch-ds.html)
   - **Bundle Configuration:** 24x 64G FC active ports (`fc1/1`–`fc1/24`), Port-Side Intake airflow (`-I`, rear-to-front), standard NX-OS license. Base chassis SKU: `DS-C9124V-K9`.
   - **Physical Dimensions (H x W x D):** 1.72 x 17.30 x 22.30 in (4.37 x 43.94 x 56.64 cm)

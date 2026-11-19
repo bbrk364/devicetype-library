@@ -13,6 +13,7 @@ weight_unit: kg
 is_full_depth: true
 comments: |
   **Cisco Nexus 93180YC-FX3 Production & Operational Notes:**
+  
   - **Datasheet Reference:** [Cisco Nexus 9300 Datacenter Switches Datasheet](https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html)
   - **Supported Power Supply FRUs & Airflow:**
     - `NXA-PAC-500W-PI`: 500W AC power supply with port-side intake airflow (Burgundy latches)

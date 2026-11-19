@@ -21,6 +21,7 @@ custom_fields:
   last_day_of_support_date: null
 comments: |
   **Cisco MDS 9132T (`UCS-EP-MDS9132T-E3`) Specifications & Supported FRU Options:**
+  
   - **Datasheet Reference:** [Cisco MDS 9132T 32-Gbps 32-Port Fibre Channel Switch Datasheet](https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-switches/datasheet-c78-739613.html)
   - **Bundle Configuration:** Cisco UCS / FlexPod Solution Pack (`UCS-EP-MDS9132T-E3`), 16 fixed 32G FC ports (`fc1/1`–`fc1/16`) + 1x Expansion Module Slot (`fc1/17`–`fc1/32`), Port-Side Exhaust airflow (`-E`, front-to-rear), Enterprise Package license included. Base chassis SKU: `DS-C9132T-K9`.
   - **Physical Dimensions (H x W x D):** 1.72 x 17.30 x 22.30 in (4.37 x 43.94 x 56.64 cm)
